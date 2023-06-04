@@ -15,7 +15,7 @@
     
     
       
-        <title>Java Virtual Machine(JVM) - Deng's Life Logger.</title>
+        <title>IDEA快捷键 - Deng's Life Logger.</title>
       
     
     
@@ -108,7 +108,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#java-virtual-machinejvm" class="md-skip">
+        <a href="#idea" class="md-skip">
           Skip to content
         </a>
       
@@ -143,7 +143,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Java Virtual Machine(JVM)
+              IDEA快捷键
             
           </span>
         </div>
@@ -465,16 +465,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    1.线程
+  <a href="#_1" class="md-nav__link">
+    目录
   </a>
   
-    <nav class="md-nav" aria-label="1.线程">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mac-win" class="md-nav__link">
+    MAC &amp; WIN键盘命令
+  </a>
+  
+    <nav class="md-nav" aria-label="MAC &amp; WIN键盘命令">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    2..1
+  <a href="#macwin" class="md-nav__link">
+    MAC和WIN键盘映射
   </a>
   
 </li>
@@ -485,50 +492,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2jvm" class="md-nav__link">
-    2.JVM内存区域
+  <a href="#_2" class="md-nav__link">
+    写代码效率快捷键
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3jvm" class="md-nav__link">
-    3.JVM运行时内存
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    4.垃圾回收及算法
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5java" class="md-nav__link">
-    5.Java引用类型
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6gc" class="md-nav__link">
-    6.GC分代收集&amp;分区收集
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7gc" class="md-nav__link">
-    7.GC垃圾收集器
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8jvm" class="md-nav__link">
-    8.JVM类加载机制
+  <a href="#_3" class="md-nav__link">
+    导航快捷键
   </a>
   
 </li>
@@ -548,54 +520,70 @@
                   
 
 
-<h1 id="java-virtual-machinejvm">Java Virtual Machine(JVM)</h1>
-<blockquote>
-<p>JVM是模拟硬件软件，包括一套字节码指令集、寄存器、栈、垃圾回收、堆和存储方法域。与硬件没有直接的交互。</p>
-</blockquote>
-<p>TODO ：补充思维导图</p>
-<p>Java源文件(.java)通过Java编译器编译成为字节码(.class)，此种字节码在不同平台的不同虚拟机都是一套指令，所以可以跨平台，最后通过JVM中的解释器将字节码翻译成为特定机器上的字节码(二进制)。</p>
-<h2 id="1">1.线程</h2>
-<h3 id="21">2..1</h3>
-<p>JVM允许一个应用并发执行多个线程。Hotspot JVM的Java线程与原生线程为一对一关系。当Java线程初始化完毕后：本地存储、缓冲区分配、同步对象、栈、程序计数器等，就会创建与之对应的原生线程。</p>
-<p>Java线程结束后，原生线程被回收，释放原生线程和Java线程的占用资源。操作系统负责调度原生线程。将其分配到可用的CPU。当原生线程初始化完毕，就会调用Java线程的<code>run()</code>方法。</p>
-<p>Hot Spot JVM系统级线程为如下：</p>
-<table>
-<thead>
-<tr>
-<th>线程</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>虚拟机线程</td>
-<td>这个线程等待JVM安全操作出现。这些操作必须要在独立线程之中执行，因为当堆修改无法进行时，线程都需要再JVM安全点。操作类型如下：stop-the-word垃圾回收、线程栈dump、线程暂停、线程偏向锁(biased locking)解除</td>
-</tr>
-<tr>
-<td>周期性任务线程</td>
-<td>负责定时器时间（也就是中断），用来调度周期性的操作的执行。</td>
-</tr>
-<tr>
-<td>GC线程</td>
-<td>这些线程支持 JVM 中不同的垃圾回收活动。</td>
-</tr>
-<tr>
-<td>编译器线程</td>
-<td>这些线程在运行时将字节码动态编译成本地平台相关的机器码。</td>
-</tr>
-<tr>
-<td>信号分发线程</td>
-<td>这个线程接收发送到 JVM 的信号并调用适当的 JVM 方法处理。</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2jvm">2.JVM内存区域</h2>
-<h2 id="3jvm">3.JVM运行时内存</h2>
-<h2 id="4">4.垃圾回收及算法</h2>
-<h2 id="5java">5.Java引用类型</h2>
-<h2 id="6gc">6.GC分代收集&amp;分区收集</h2>
-<h2 id="7gc">7.GC垃圾收集器</h2>
-<h2 id="8jvm">8.JVM类加载机制</h2>
+<h1 id="idea">IDEA快捷键</h1>
+<h2 id="_1">目录</h2>
+<p>[toc]</p>
+<h2 id="mac-win">MAC &amp; WIN键盘命令</h2>
+<h3 id="macwin">MAC和WIN键盘映射</h3>
+<p>Mac 键盘的功能键是 <code>fn</code> 、<code>control</code> 、<code>option</code> 、<code>command</code>。</p>
+<p>Win 键盘的功能键是 <code>Control</code>、 <code>Win</code>、<code>Alt</code>。</p>
+<ul>
+<li>(⌃)Control-------------&gt; Ctrl</li>
+<li>(⌥)Option-------------&gt; Alt</li>
+<li>(⌘)Command--------&gt; Win</li>
+</ul>
+<h2 id="_2">写代码效率快捷键</h2>
+<p>代码提示和补全：<code>ctrl + space</code>，<code>enter</code></p>
+<p>剩余代码补全当前语句：<code>ctrl + shift + enter</code></p>
+<p>代码建议：<code>alt + enter</code></p>
+<p>代码生成：<code>alt + insert</code></p>
+<p>类、变量、方法重命名：<code>shift + f6</code></p>
+<p>重新格式化代码：<code>ctrl + alt + l</code></p>
+<p>提取值为变量：<code>ctrl + alt + v(var)</code></p>
+<p>提取值为：<code>ctrl + alt + f(field)</code></p>
+<p>提取值为常数：<code>ctrl + alt + c(const)</code></p>
+<p>提取为参数：<code>ctrl + alt + p(parm)</code></p>
+<p>提取为方法：<code>ctrl + alt + m(method)</code></p>
+<p>将方法转为inline：<code>ctrl + alt + n</code></p>
+<p>快速定位错误：<code>f2</code></p>
+<h2 id="_3">导航快捷键</h2>
+<p>跳转到方法定义以及反向操作:</p>
+<ul>
+<li><code>ctrl + b</code></li>
+</ul>
+<p>跳转到方法实现及反向操作：</p>
+<ul>
+<li><code>ctrl + alt + b</code></li>
+</ul>
+<p>super method犯法定义：</p>
+<ul>
+<li><code>ctrl + U</code></li>
+</ul>
+<p>寻找文件：</p>
+<ul>
+<li><code>shift + shift</code></li>
+</ul>
+<p>在files中寻找(字符串匹配)：</p>
+<ul>
+<li><code>ctrl + alt + f</code></li>
+</ul>
+<p>跳转到左侧项目目录：</p>
+<ul>
+<li><code>alt + 1</code></li>
+<li><code>`command + 1</code></li>
+</ul>
+<p>从左侧项目目录树跳转到编辑器：</p>
+<ul>
+<li><code>ESC</code></li>
+</ul>
+<p>定位文件在项目文件树中的位置：</p>
+<ul>
+<li><code>alt + f1</code></li>
+</ul>
+<p>切换编辑器Tab：</p>
+<ul>
+<li><code>alt + ←(left)/→(right)</code></li>
+</ul>
 
 
 
