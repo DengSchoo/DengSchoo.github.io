@@ -1,9 +1,23 @@
-site_name: Deng's 
+site_name: Deng's Life Logger.
 
 # Repository
 repo_name: DengSchoo/DengSchoo.github.io
 repo_url: https://github.com/DengSchoo/DengSchoo.github.io
 edit_uri: ""
+
+markdown_extensions:
+  
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - abbr
+  - pymdownx.snippets
+  - def_list
+  - attr_list
 
 theme:
   name: material
@@ -19,39 +33,13 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
     - primary: blue
-  
-  icon:
-    admonition:
-      note: octicons/tag-16
-      abstract: octicons/checklist-16
-      info: octicons/info-16
-      tip: octicons/squirrel-16
-      success: octicons/check-16
-      question: octicons/question-16
-      warning: octicons/alert-16
-      failure: octicons/x-circle-16
-      danger: octicons/zap-16
-      bug: octicons/bug-16
-      example: octicons/beaker-16
-      quote: octicons/quote-16
-  
-  markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - abbr
-  - pymdownx.snippets
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - attr_list
-
-  plugins:
-  - same-dir
-  - search
-  - minify:
-      minify_html: true
-
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - python
+    - c++
+    - cpp
+    - java
   features:
     - content.code.annotate
     # - content.tabs.link
@@ -69,6 +57,34 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
+    - content.code.copy
+    - content.code.annotate  
+  
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  
+
+  
+
+  plugins:
+  - same-dir
+  - search
+  - minify:
+      minify_html: true
+
+  
 # extra:
 #     alternate:
 #       - name: English
@@ -82,5 +98,17 @@ theme:
 # docs_dir: ./
 
 nav:
-  - Java学习笔记:
-    - JVM: ./java-notes/JavaVirtualMachine(JVM).md
+  # - 学习路线: README.md
+  # - Java学习笔记:
+  #   - JVM: ./java-notes/JavaVirtualMachine(JVM).md
+  - 算法: 
+    # - 算法笔记: ./algorithm/notes/Notes.md
+    # - lc每日一题: ./algorithm/lc-daily/LC Daiyly Problems.md
+    # - acwing每日一题: ./algorithm/acwing-daily/Acwing Daily.md
+    - lc 345周赛: ./algorithm/lc-weekly/LC Weekly Problems.md
+  # - 读书笔记: README.md
+  - 生活:
+    - 工作一年的感受: ./live/工作快一年的得与失.md
+    - 葱油拌面: ./live/面食.md
+  
+
