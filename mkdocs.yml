@@ -105,7 +105,7 @@ nav:
     # - 算法笔记: ./algorithm/notes/Notes.md
     # - lc每日一题: ./algorithm/lc-daily/LC Daiyly Problems.md
     # - acwing每日一题: ./algorithm/acwing-daily/Acwing Daily.md
-    - lc 345周赛: ./algorithm/lc-weekly/LC Weekly Problems.md
+    - lc 345周赛: ./algorithm/lc-weekly/LeetCode344thContest.md
   # - 读书笔记: README.md
   - 生活:
     - 工作一年的感受: ./live/TheGainsAndLossesOfWorkingForNearlyAYear.md
