@@ -1,38 +1,24 @@
 site_name: Deng's Life Logger.
+site_url: https://dengschoo.github.io/Logger #这个是home page的位置，比如https://charleschile.github.io/Notebook，serve的话就会运行在http://127.0.0.1:8000/Notebook/
+site_author: 邓世豪
+site_description: 邓世豪的个人笔记
 
-# Repository
-repo_name: DengSchoo/DengSchoo.github.io
-repo_url: https://github.com/DengSchoo/DengSchoo.github.io
-edit_uri: ""
 
-markdown_extensions:
-  
-  - admonition
-  - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - abbr
-  - pymdownx.snippets
-  - def_list
-  - attr_list
 
+# [Extra]
+extra_css:
+  - stylesheets/basic.css
+  - stylesheets/admonition.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css
+
+
+# [UI]
+## [top]
 theme:
   name: material
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material//weather-sunny
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
-    - primary: blue
+  # font:
+  #   text: Source Sans Pro
+  #   code: Source Code Pro
   highlightjs: true
   hljs_languages:
     - yaml
@@ -40,27 +26,23 @@ theme:
     - c++
     - cpp
     - java
-  features:
-    - content.code.annotate
-    # - content.tabs.link
-    # - header.autohide
-    # - navigation.expand
-    # - navigation.indexes
+    - golang
+    - rust
+    - xml
+    - shell
+  features: 
     - navigation.instant
-    - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    - navigation.footer
     - navigation.tracking
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
+    - navigation.tabs # 使用Tab来进行分类
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - content.code.annotate # 代码动态注释
     - content.code.copy
-    - content.code.annotate  
-  
+  language: zh # 一些提示性的文字会变成中文
   icon:
+    repo: fontawesome/brands/github
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -74,41 +56,92 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
-  
 
-  
 
-  plugins:
-  - same-dir
-  - search
-  - minify:
-      minify_html: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 日间模式
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: white
+      accent: pink
 
-  
-# extra:
-#     alternate:
-#       - name: English
-#         link: /en/ 
-#         lang: en
-#       - name: 中文
-#         link: /zh/
-#         lang: zh
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: blue grey
+      accent: pink
+# edit_uri: edit/main/docs # 编辑按钮跳转的链接
 
-# use_directory_urls: true
-# docs_dir: ./
+## [top-right corner]
+repo_url: https://dengschoo.github.io/ # 右上角点击跳转的链接
+repo_name: dengschoo/Life Logger # 右上角的名字
+## [bottom-left corner]
+copyright: Copyright &copy; 2023 邓世豪 # 左下角的版权声明
+## [bottom-right corner]
 
+extra:
+  social: # icons
+    - icon: fontawesome/brands/github
+      link: https://github.com/dengschoo/
+      name: GitHub | DengSchoo
+
+# [Navigation]
 nav:
-  # - 学习路线: README.md
-  # - Java学习笔记:
-  #   - JVM: ./java-notes/JavaVirtualMachine(JVM).md
-  - 算法: 
-    # - 算法笔记: ./algorithm/notes/Notes.md
-    # - lc每日一题: ./algorithm/lc-daily/LC Daiyly Problems.md
-    # - acwing每日一题: ./algorithm/acwing-daily/Acwing Daily.md
-    - lc 345周赛: ./algorithm/lc-weekly/LeetCode344thContest.md
-  # - 读书笔记: README.md
-  - 生活:
-    - 工作一年的感受: ./live/TheGainsAndLossesOfWorkingForNearlyAYear.md
-    - 葱油拌面: ./live/NoodlesMixedWithScallionOil.md
-  
+  - Home Page:
+    - README.md
+  # - Algorithm:
+  #   - Algorithm/index.md
+  #   - Acwing:
+  #     - 
+  #   - LeetCode:
+    
 
+
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: Content
+  - tables
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbr.md
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      # linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - meta
