@@ -91,9 +91,13 @@ extra:
       name: GitHub | DengSchoo
 
 # [Navigation]
+article-translation: &en-art-trans English/article-trans
 nav:
   - Home Page:
     - README.md
+  - English:
+    - article-trans:
+      - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md
   # - Algorithm:
   #   - Algorithm/index.md
   #   - Acwing:
