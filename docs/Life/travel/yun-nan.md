@@ -18,7 +18,7 @@
 
 <img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172244661.JPG" alt="DSC02928" style="zoom:10%;" />
 
-## 2.滇池及海鸿湿地公园
+## 2.滇池及海洪湿地公园
 
 > 看、喂海鸥、看昆明冬日景色、枫红林、落日
 
