@@ -98,12 +98,37 @@ nav:
   - English:
     - article-trans:
       - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md
-  # - Algorithm:
-  #   - Algorithm/index.md
-  #   - Acwing:
-  #     - 
-  #   - LeetCode:
-    
+  - Algorithm:
+    - Algorithm/index.md
+    - LC Weekly Contest:
+      - Algorithm/lc-weekly/lc-376th.md
+
+# plugins:
+#   - blog: # 设置blog
+#       # blog_dir: . # 设置blog对应的路径
+#       blog_toc: true # 设置blog索引页面的目录
+#       post_date_format: full # 设置blog索引页面的日期格式
+#       archive_toc: true
+#       categories_toc: true
+#       pagination_format: "$link_first $link_previous ~2~ $link_next $link_last" # 设置blog索引页面的分页格式
+#       pagination_keep_content: true # 设置blog索引页面的分页内容
+#       draft_if_future_date: true # 设置如果blog的日期是未来的话，就会被当成草稿不会被发布
+#   - git-revision-date-localized: # 页面下方创建和修改时间
+#       enable_creation_date: true
+#       type: timeago
+#   - glightbox # 图片放大
+#   - search: # 搜索(选择支持中文、英文)
+#       separator: '[\u200b\u3000\-、。，．？！；\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+#       # jieba_dict: jieba_dict/dict.txt.big
+#       # jieba_dict_user: jieba_dict/user_dict.txt
+#       lang: 
+#         # - zh
+#         - ja
+#         - en
+#   # - tags # 添加给单个文档添加tag标签
+#   - statistics: # 统计页面字数、代码行数、阅读时间
+#       page_read_time: false
+#       page_check_metadata: comments
 
 
 
