@@ -95,13 +95,16 @@ article-translation: &en-art-trans English/article-trans
 nav:
   - Home Page:
     - README.md
-  - English:
-    - article-trans:
-      - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md
   - Algorithm:
     - Algorithm/index.md
     - LC Weekly Contest:
       - Algorithm/lc-weekly/lc-376th.md
+  - English:
+    - article-trans:
+      - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md
+  - Life:
+    - Moment With GF:
+      - Life/travel/yun-nan.md
 
 # plugins:
 #   - blog: # 设置blog
