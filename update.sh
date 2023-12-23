@@ -1,6 +1,6 @@
 #!/bin/bash
-git add . > ehco
-git commit -m "$1" > echo
+git add .
+git commit -m "$1"
 git push > echo
 
-mkdocs gh-deploy > echo
+mkdocs gh-deploy
