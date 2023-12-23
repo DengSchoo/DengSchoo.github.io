@@ -105,6 +105,9 @@ nav:
   - Life:
     - Moment With GF:
       - Life/travel/yun-nan.md
+  - Project:
+    - ML Related:
+      - Projects/help-gf-with-openAI.md
 
 # plugins:
 #   - blog: # 设置blog

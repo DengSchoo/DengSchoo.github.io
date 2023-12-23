@@ -2,11 +2,6 @@
 
 > 靡不有初系列
 
-```python 
-def sayhi():
-    return "hi,Python全栈开发" # (1)
-```
-
 
 
 # LC Daily Problem

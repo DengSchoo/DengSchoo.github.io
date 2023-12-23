@@ -91,6 +91,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dengschoo.github.io/Logger/Tools/MAC/commond/</loc>
+         <lastmod>2023-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Tools/MAC/software/</loc>
+         <lastmod>2023-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dengschoo.github.io/Logger/blog/</loc>
          <lastmod>2023-12-17</lastmod>
          <changefreq>daily</changefreq>
