@@ -89,7 +89,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/dengschoo/
       name: GitHub | DengSchoo
-
+  copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
 # [Navigation]
 article-translation: &en-art-trans English/article-trans
 nav:
@@ -143,6 +143,7 @@ nav:
 
 
 markdown_extensions:
+  # - mdx_truly_sane_lists
   - abbr
   - admonition
   - attr_list
@@ -154,8 +155,7 @@ markdown_extensions:
       title: Content
   - tables
   - pymdownx.snippets:
-      auto_append:
-        - includes/abbr.md
+      check_paths: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem
@@ -169,7 +169,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
-      # linenums: true
+      linenums: true
   - pymdownx.superfences:
       custom_fences:
           - name: mermaid
@@ -178,8 +178,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.smartsymbols
+  - pymdownx.progressbar
+  - pymdownx.magiclink
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.tilde
   - meta

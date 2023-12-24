@@ -30,15 +30,13 @@ int main() {
 - `bits/stdc++.h`是万能库包含常用的库文件
 - `using namespace std;`表示类和函数可以直接在代码中使用，如果除去这一句，举个例子你的输出写法前面就要加上`std::cout`
 - 运行code：`g++ -std=c++11 -O2 -Wall test.cpp -o test`
-  - `-std=c++11`：表示使用cpp11语法标准
-  - `-O2`：优化代码
-  - `-Wall`：展示警告和可能的错误
+    - `-std=c++11`：表示使用cpp11语法标准
+    - `-O2`：优化代码
+    - `-Wall`：展示警告和可能的错误
 
 ### Input And Output｜输入与输出
 
-- Input : cin
-
-  - 可以忽略中间空格以及换行
+- Input : cin,可以忽略中间空格以及换行
 
     ```c++
     int a, b;
@@ -48,8 +46,6 @@ int main() {
 
 - Output : cout stream
 
-  - 输出流：
-
     ```c++
     int a = 123, b = 456;
     string x = "monkey";
@@ -57,8 +53,6 @@ int main() {
     ```
 
 - 优化输入输出速度：
-
-  - 
 
     ```c++
     ios::sync_with_stdio(0);
@@ -71,16 +65,12 @@ int main() {
 
 - 读取一整行：
 
-  - 
-
     ```c++
     string s;
     getline(cin, s);
     ```
 
 - 读取未知多行数据，一直读取到数据末尾EOF
-
-  - 
 
     ```c++
     while (cin >> x) {
@@ -89,8 +79,6 @@ int main() {
     ```
 
 - 读取文件和输出到文件
-
-  - 
 
     ```c++
     freopen("input.txt", "r", stdin);
@@ -102,8 +90,8 @@ int main() {
 #### Integers｜整数
 
 - 数据范围
-  - 32bit(int)：−2^31^...2^31^−1，大概-2 * 10^9^~2 * 10 ^9^
-  - 64bit(long long): 2^63^...2^63^−1，大概−9·10^18^ ...9·10^18^
+    - 32bit(int)：−2^31^...2^31^−1，大概-2 * 10^9^~2 * 10 ^9^
+    - 64bit(long long): 2^63^...2^63^−1，大概−9·10^18^ ...9·10^18^
 - LL标识long long类型：`long long x = 123456789123456789LL;`
 - 两个int*int结果还是int
 - g++ compiler支持128bit数据`__int128_t`，大概数据范围在-10^38^~10^38^(大多数竞赛都不允许此类型)
@@ -132,14 +120,14 @@ rounding errors：
 
 ```c++
 double x = 0.3*3+0.1;
-    printf("%.20f\n", x); // 0.99999999999999988898
+printf("%.20f\n", x); // 0.99999999999999988898
 ```
 
 因为存在舍入误差所以对于浮点数的比较要用：
 
 ```c++
 if (abs(a-b) < 1e-9) {
-        // a and b are equal
+    // a and b are equal
 }
 
 ```
@@ -150,47 +138,47 @@ if (abs(a-b) < 1e-9) {
 
 > 简化代码
 
-#### Type Names
+#### Type Names｜类型名称
 
 用`typedef`来给出一个简短的类型名称.
 
 ```c++
 typedef long long ll;
 long long a = 123456789;
-    long long b = 987654321;
-    cout << a*b << "\n";
+long long b = 987654321;
+cout << a*b << "\n";
 ```
 
 ```c++
 typedef vector<int> vi;
-    typedef pair<int,int> pi;
+typedef pair<int,int> pi;
 ```
 
-#### Macros
+#### Macros｜宏定义
 
 > A macro means that certain strings in the code will be changed before the compilation.In C++, macros are defined using the #define keyword.
 
 ```c++
 #define F first
-    #define S second
-    #define PB push_back
-    #define MP make_pair
+#define S second
+#define PB push_back
+ #define MP make_pair
 ```
 
 code:
 
 ```c++
 v.push_back(make_pair(y1,x1));
-    v.push_back(make_pair(y2,x2));
-    int d = v[i].first+v[i].second;
+v.push_back(make_pair(y2,x2));
+int d = v[i].first+v[i].second;
 ```
 
 Shortend:
 
 ```c++
 v.PB(MP(y1,x1));
-    v.PB(MP(y2,x2));
-    int d = v[i].F+v[i].S;
+v.PB(MP(y2,x2));
+int d = v[i].F+v[i].S;
 ```
 
 Macro param:
@@ -199,12 +187,12 @@ Macro param:
 #define REP(i,a,b) for (int i = a; i <= b; i++)
 
 for (int i = 1; i <= n; i++) {
-        search(i);
+    search(i);
 }
 
 // to 
 REP(i,1,n) {
-        search(i);
+    search(i);
 }
 ```
 
@@ -249,21 +237,21 @@ exp：`3, 7, 11, 15`
 - |S|表示S的size
 - 如果S中包含一个x，写做x ∈ S，否者 x ∉ S
 - 集合操作
-  - The intersection A ∩ B｜取交集
-  - The union A ∪ B｜取并集
-  - The complement A ̄｜取反
-  - The difference A \ B = A ∩ B ̄｜将B的元素从A中移除
+    - The intersection A ∩ B｜取交集
+    - The union A ∪ B｜取并集
+    - The complement A ̄｜取反
+    - The difference A \ B = A ∩ B ̄｜将B的元素从A中移除
 - subset：A中元素都存在于S，写做A ⊂ S，一个集合的子集格数为2^|S|^，包含空集
 - 字符表示
-  - N (natural numbers), 
-  - Z (integers), 
-  - Q (rational numbers)
-  - R (real numbers)
+    - N (natural numbers), 
+    - Z (integers), 
+    - Q (rational numbers)
+    - R (real numbers)
 - 表示一个集合：`{f(n):n∈S},`
-  - f(n)表示函数
-  - n表示参数，并且范围在S中
+    - f(n)表示函数
+    - n表示参数，并且范围在S中
 
-#### Logic
+#### Logic｜逻辑运算 
 
 > The value of a logical expression is either true (1) or false (0). 
 >
@@ -280,9 +268,7 @@ exp：`3, 7, 11, 15`
 
 
 
-#### Functions
-
-
+#### Functions｜计算函数
 
 - ceil and floor:The function ⌊x⌋ rounds the number x down to an integer, and the function ⌈x⌉ rounds the number x up to an integer. For example,⌊3/2⌋ = 1 and ⌈3/2⌉ = 2.
 
@@ -290,15 +276,15 @@ exp：`3, 7, 11, 15`
 
 - The factorial n! can be defined
 
-  ![image-20231224225721572](https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257658.png)
+    ![image-20231224225721572](https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257658.png)
 
 - Fibonacci numbers｜斐波那契数列:
 
-  ![image-20231224225750219](https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257254.png)
+    ![image-20231224225750219](https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257254.png)
 
-  - Binet’s formula｜比奈公式:
+    - Binet’s formula｜比奈公式:
 
-    ![image-20231224225821628](https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242258710.png)
+        ![image-20231224225821628](https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242258710.png)
 
 #### Logarithms｜对数
 
