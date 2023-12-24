@@ -1231,14 +1231,15 @@
 <p>添加以下环境变量：</p>
 <p><code>JAVA_HOME</code>：<code>C:\Program Files (x86)\Java\jdk1.8.0_91</code> （根据自己的实际路径配置）</p>
 <p><code>CLASSPATH</code>：<code>.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</code> （注意前面有个"."）</p>
-<div class="highlight"><pre><span></span><code>Path`：`%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Path`：`%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+</code></pre></div></td></tr></table></div>
 <h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
 <p>执行 <code>vi /etc/profile</code> ，编辑环境变量文件</p>
 <p>添加两行：</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">JAVA_HOME</span><span class="o">=</span>path/to/java
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">JAVA_HOME</span><span class="o">=</span>path/to/java
 <span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>JAVA_HOME/bin:JAVA_HOME/jre/bin:
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>执行 <code>source /etc/profile</code> ，立即生效。</p>
 <h2 id="_5">测试安装成功测试安装成功<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>执行命令 <code>java -version</code> ，如果安装成功，会打印当前 java 的版本信息。</p>
@@ -1255,18 +1256,34 @@
 </ul>
 <h3 id="hello-world">第一个程序：Hello World<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h3>
 <p>添加 HelloWorld.java 文件，内容如下：</p>
-<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <p>执行后，控制台输出：</p>
-<div class="highlight"><pre><span></span><code>Hello World
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Hello World
+</code></pre></div></td></tr></table></div>
 <h1 id="2">2.基础语法特性<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
 <h3 id="21">2.1 注释<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloWorld</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="cm">/*</span>
 <span class="cm">     * JavaDoc 注释</span>
 <span class="cm">     */</span>
@@ -1279,7 +1296,7 @@
 <span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <h3 id="22">2.2 基础数据类型<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
 <h4 id="221">2.2.1 数据类型<a class="headerlink" href="#221" title="Permanent link">&para;</a></h4>
 <ul>
