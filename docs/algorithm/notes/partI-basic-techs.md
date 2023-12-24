@@ -1,8 +1,8 @@
 # Part I: Basic techniques
 
-## Introduction|简介
+## Introduction｜简介
 
-### Programming Language
+### Programming Language｜变成语言
 
 > At the moment, the most popular programming languages used in contests are C++, Python and Java. For example, in Google Code Jam 2017, among the best 3,000 participants, 79 % used C++, 16 % used Python and 8 % used Java [29]. Some participants also used several languages.
 
@@ -12,7 +12,7 @@
 - java：Collection库以及Util库刷题也不错
 - c++(11+)：因为带有STL支持各种数据结构以及附带算法，比较适合做算法题。本文以cpp 11版本书写代码。
 
-### C++ Code Template
+#### C++ Code Template｜代码模板
 
 A typical C++ code template:
 
@@ -34,7 +34,7 @@ int main() {
   - `-O2`：优化代码
   - `-Wall`：展示警告和可能的错误
 
-### Input And Output
+### Input And Output｜输入与输出
 
 - Input : cin
 
@@ -52,16 +52,18 @@ int main() {
 
     ```c++
     int a = 123, b = 456;
-        string x = "monkey";
-        cout << a << " " << b << " " << x << "\n";
+    string x = "monkey";
+    cout << a << " " << b << " " << x << "\n";
     ```
 
 - 优化输入输出速度：
 
-  ```c++
-  ios::sync_with_stdio(0);
-  cin.tie(0);
-  ```
+  - 
+
+    ```c++
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    ```
 
 - endl:换行并刷新缓冲区
 
@@ -69,29 +71,35 @@ int main() {
 
 - 读取一整行：
 
-  ```c++
-  string s;
-      getline(cin, s);
-  ```
+  - 
+
+    ```c++
+    string s;
+    getline(cin, s);
+    ```
 
 - 读取未知多行数据，一直读取到数据末尾EOF
 
-  ```c++
-  while (cin >> x) {
-          // code
-  }
-  ```
+  - 
+
+    ```c++
+    while (cin >> x) {
+        // code
+    }
+    ```
 
 - 读取文件和输出到文件
 
-  ```c++
-  freopen("input.txt", "r", stdin);
-  freopen("output.txt", "w", stdout);
-  ```
+  - 
 
-### Working With Numbers
+    ```c++
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    ```
 
-#### Integers
+### Working With Numbers｜处理数字
+
+#### Integers｜整数
 
 - 数据范围
   - 32bit(int)：−2^31^...2^31^−1，大概-2 * 10^9^~2 * 10 ^9^
@@ -102,7 +110,7 @@ int main() {
 
 
 
-#### Modular Arithmetic
+#### Modular Arithmetic｜模运算
 
 在某些答案特别大的情况下，为了照顾各语言的差异，所以都会对结果进行取模操作，常用的mod数为`1e9 + 7`，这样可以照顾到int和long数据类型。
 
@@ -114,7 +122,7 @@ int main() {
 
 
 
-#### Floating Point Numbers
+#### Floating Point Numbers｜浮点数
 
 常用的是64bit的double类型，同时g++支持80bit的long double，大多数场景下64就够了，80的更为准确。
 
@@ -138,7 +146,7 @@ if (abs(a-b) < 1e-9) {
 
 
 
-### Shortening Code
+### Shortening Code｜简化代码
 
 > 简化代码
 
@@ -204,9 +212,9 @@ REP(i,1,n) {
 
 
 
-### Mathematics
+### Mathematics｜算数运算
 
-#### Sum Formulas
+#### Sum Formulas｜求和公式
 
 给出一些常用求和公式：
 
@@ -234,7 +242,7 @@ exp：`3, 7, 11, 15`
 
 
 
-### Set Theory｜集合论
+#### Set Theory｜集合论
 
 > A set is a collection of elements. For example, the set, X = {2, 4, 7}
 
@@ -255,7 +263,7 @@ exp：`3, 7, 11, 15`
   - f(n)表示函数
   - n表示参数，并且范围在S中
 
-### Logic
+#### Logic
 
 > The value of a logical expression is either true (1) or false (0). 
 >
@@ -272,7 +280,7 @@ exp：`3, 7, 11, 15`
 
 
 
-### Functions
+#### Functions
 
 
 
@@ -292,7 +300,7 @@ exp：`3, 7, 11, 15`
 
     ![image-20231224225821628](https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242258710.png)
 
-### Logarithms｜对数
+#### Logarithms｜对数
 
 > The logarithm of a number x is denoted logk(x), where k is the base of the logarithm. According to the definition, logk(x) = a exactly when k^a^ = x.
 
@@ -300,42 +308,58 @@ exp：`3, 7, 11, 15`
 
 The natural logarithm ln(x) of a number x is a logarithm whose base is e ≈ 2.71828. Another property of logarithms is that the number of digits of an integer x in base b is ⌊logb(x)+1⌋. For example, the representation of 123 in base 2 is 1111011 and ⌊log2(123) + 1⌋ = 7.
 
-## Time Complexity|时间复杂度
+
+
+### Contests and resources｜比赛和资源
+
+#### IOI｜国际奥林匹克信息竞赛
 
 
 
-## Sorting|排序
+#### ICPC｜国际高校编程比赛
+
+
+
+#### Online Contests｜在线比赛
+
+
+
+## Time Complexity｜时间复杂度
+
+
+
+## Sorting｜排序
 
 
 
 
 
-## Data Structures|数据结构
+## Data Structures｜数据结构
 
 
 
-## Complete Search|穷举搜索
-
-
-
-
-
-## Greedy Algorithms|贪心算法
+## Complete Search｜穷举搜索
 
 
 
 
 
-## Dynamic Programming|动态规划
+## Greedy Algorithms｜贪心算法
 
 
 
-## Amortized Analusis|平摊分析
+
+
+## Dynamic Programming｜动态规划
 
 
 
-## Range Queries|范围查询
+## Amortized Analusis｜平摊分析
 
 
 
-## Bit Manipulation|位操作
+## Range Queries｜范围查询
+
+
+
+## Bit Manipulation｜位操作
