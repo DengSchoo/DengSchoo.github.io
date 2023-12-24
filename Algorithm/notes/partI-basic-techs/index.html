@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://dengschoo.github.io/Logger/Algorithm/notes/partI-basic-techs/">
       
       
+        <link rel="prev" href="../../lc-weekly/lc-377th/">
+      
+      
+        <link rel="next" href="../../../English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -282,10 +286,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -493,6 +499,8 @@
       
   
   
+    
+  
   
   
     
@@ -504,6 +512,8 @@
       
         
       
+        
+      
     
     
     
@@ -511,12 +521,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
@@ -538,7 +548,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Algorithm
@@ -627,6 +637,426 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Note
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Note
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Part I: Basic techniques
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Part I: Basic techniques
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Content">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Content
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction｜简介
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction｜简介">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#programming-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Programming Language｜变成语言
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming Language｜变成语言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-code-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ Code Template｜代码模板
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-and-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input And Output｜输入与输出
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working With Numbers｜处理数字
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Working With Numbers｜处理数字">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integers｜整数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modular-arithmetic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modular Arithmetic｜模运算
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floating-point-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Floating Point Numbers｜浮点数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shortening-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shortening Code｜简化代码
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shortening Code｜简化代码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Type Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Macros
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mathematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematics｜算数运算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematics｜算数运算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sum-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum Formulas｜求和公式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Theory｜集合论
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logarithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithms｜对数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contests-and-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contests and resources｜比赛和资源
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contests and resources｜比赛和资源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ioi" class="md-nav__link">
+    <span class="md-ellipsis">
+      IOI｜国际奥林匹克信息竞赛
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      ICPC｜国际高校编程比赛
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-contests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online Contests｜在线比赛
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Complexity｜时间复杂度
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sorting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting｜排序
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Structures｜数据结构
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Search｜穷举搜索
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greedy-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greedy Algorithms｜贪心算法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Programming｜动态规划
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amortized-analusis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amortized Analusis｜平摊分析
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#range-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Range Queries｜范围查询
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bit-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bit Manipulation｜位操作
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1041,35 +1471,41 @@
         <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduction|简介
+      Introduction｜简介
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Introduction|简介">
+    <nav class="md-nav" aria-label="Introduction｜简介">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#programming-language" class="md-nav__link">
     <span class="md-ellipsis">
-      Programming Language
+      Programming Language｜变成语言
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Programming Language｜变成语言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-code-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ Code Template｜代码模板
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#c-code-template" class="md-nav__link">
-    <span class="md-ellipsis">
-      C++ Code Template
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#input-and-output" class="md-nav__link">
     <span class="md-ellipsis">
-      Input And Output
+      Input And Output｜输入与输出
     </span>
   </a>
   
@@ -1078,17 +1514,17 @@
           <li class="md-nav__item">
   <a href="#working-with-numbers" class="md-nav__link">
     <span class="md-ellipsis">
-      Working With Numbers
+      Working With Numbers｜处理数字
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Working With Numbers">
+    <nav class="md-nav" aria-label="Working With Numbers｜处理数字">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#integers" class="md-nav__link">
     <span class="md-ellipsis">
-      Integers
+      Integers｜整数
     </span>
   </a>
   
@@ -1097,7 +1533,7 @@
           <li class="md-nav__item">
   <a href="#modular-arithmetic" class="md-nav__link">
     <span class="md-ellipsis">
-      Modular Arithmetic
+      Modular Arithmetic｜模运算
     </span>
   </a>
   
@@ -1106,7 +1542,7 @@
           <li class="md-nav__item">
   <a href="#floating-point-numbers" class="md-nav__link">
     <span class="md-ellipsis">
-      Floating Point Numbers
+      Floating Point Numbers｜浮点数
     </span>
   </a>
   
@@ -1120,11 +1556,11 @@
           <li class="md-nav__item">
   <a href="#shortening-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Shortening Code
+      Shortening Code｜简化代码
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Shortening Code">
+    <nav class="md-nav" aria-label="Shortening Code｜简化代码">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1153,24 +1589,19 @@
           <li class="md-nav__item">
   <a href="#mathematics" class="md-nav__link">
     <span class="md-ellipsis">
-      Mathematics
+      Mathematics｜算数运算
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Mathematics">
+    <nav class="md-nav" aria-label="Mathematics｜算数运算">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#sum-formulas" class="md-nav__link">
     <span class="md-ellipsis">
-      Sum Formulas
+      Sum Formulas｜求和公式
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1214,11 +1645,58 @@
     </nav>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#contests-and-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contests and resources｜比赛和资源
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contests and resources｜比赛和资源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ioi" class="md-nav__link">
+    <span class="md-ellipsis">
+      IOI｜国际奥林匹克信息竞赛
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      ICPC｜国际高校编程比赛
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-contests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Online Contests｜在线比赛
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#time-complexity" class="md-nav__link">
     <span class="md-ellipsis">
-      Time Complexity|时间复杂度
+      Time Complexity｜时间复杂度
     </span>
   </a>
   
@@ -1227,7 +1705,7 @@
         <li class="md-nav__item">
   <a href="#sorting" class="md-nav__link">
     <span class="md-ellipsis">
-      Sorting|排序
+      Sorting｜排序
     </span>
   </a>
   
@@ -1236,7 +1714,7 @@
         <li class="md-nav__item">
   <a href="#data-structures" class="md-nav__link">
     <span class="md-ellipsis">
-      Data Structures|数据结构
+      Data Structures｜数据结构
     </span>
   </a>
   
@@ -1245,7 +1723,7 @@
         <li class="md-nav__item">
   <a href="#complete-search" class="md-nav__link">
     <span class="md-ellipsis">
-      Complete Search|穷举搜索
+      Complete Search｜穷举搜索
     </span>
   </a>
   
@@ -1254,7 +1732,7 @@
         <li class="md-nav__item">
   <a href="#greedy-algorithms" class="md-nav__link">
     <span class="md-ellipsis">
-      Greedy Algorithms|贪心算法
+      Greedy Algorithms｜贪心算法
     </span>
   </a>
   
@@ -1263,7 +1741,7 @@
         <li class="md-nav__item">
   <a href="#dynamic-programming" class="md-nav__link">
     <span class="md-ellipsis">
-      Dynamic Programming|动态规划
+      Dynamic Programming｜动态规划
     </span>
   </a>
   
@@ -1272,7 +1750,7 @@
         <li class="md-nav__item">
   <a href="#amortized-analusis" class="md-nav__link">
     <span class="md-ellipsis">
-      Amortized Analusis|平摊分析
+      Amortized Analusis｜平摊分析
     </span>
   </a>
   
@@ -1281,7 +1759,7 @@
         <li class="md-nav__item">
   <a href="#range-queries" class="md-nav__link">
     <span class="md-ellipsis">
-      Range Queries|范围查询
+      Range Queries｜范围查询
     </span>
   </a>
   
@@ -1290,7 +1768,7 @@
         <li class="md-nav__item">
   <a href="#bit-manipulation" class="md-nav__link">
     <span class="md-ellipsis">
-      Bit Manipulation|位操作
+      Bit Manipulation｜位操作
     </span>
   </a>
   
@@ -1312,8 +1790,8 @@
 
 
 <h1 id="part-i-basic-techniques">Part I: Basic techniques<a class="headerlink" href="#part-i-basic-techniques" title="Permanent link">&para;</a></h1>
-<h2 id="introduction">Introduction|简介<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<h3 id="programming-language">Programming Language<a class="headerlink" href="#programming-language" title="Permanent link">&para;</a></h3>
+<h2 id="introduction">Introduction｜简介<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<h3 id="programming-language">Programming Language｜变成语言<a class="headerlink" href="#programming-language" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>At the moment, the most popular programming languages used in contests are C++, Python and Java. For example, in Google Code Jam 2017, among the best 3,000 participants, 79 % used C++, 16 % used Python and 8 % used Java [29]. Some participants also used several languages.</p>
 </blockquote>
@@ -1323,7 +1801,7 @@
 <li>java：Collection库以及Util库刷题也不错</li>
 <li>c++(11+)：因为带有STL支持各种数据结构以及附带算法，比较适合做算法题。本文以cpp 11版本书写代码。</li>
 </ul>
-<h3 id="c-code-template">C++ Code Template<a class="headerlink" href="#c-code-template" title="Permanent link">&para;</a></h3>
+<h4 id="c-code-template">C++ Code Template｜代码模板<a class="headerlink" href="#c-code-template" title="Permanent link">&para;</a></h4>
 <p>A typical C++ code template:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
@@ -1341,7 +1819,7 @@
 <li><code>-O2</code>：优化代码</li>
 <li><code>-Wall</code>：展示警告和可能的错误</li>
 </ul>
-<h3 id="input-and-output">Input And Output<a class="headerlink" href="#input-and-output" title="Permanent link">&para;</a></h3>
+<h3 id="input-and-output">Input And Output｜输入与输出<a class="headerlink" href="#input-and-output" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>Input : cin</p>
@@ -1359,18 +1837,18 @@
 <li>
 <p>输出流：</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">456</span><span class="p">;</span>
-<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;monkey&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="n">string</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;monkey&quot;</span><span class="p">;</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 </code></pre></div>
 </li>
 <li>
 <p>优化输入输出速度：</p>
 </li>
-</ul>
+<li>
 <div class="highlight"><pre><span></span><code><span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 <span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 </code></pre></div>
-<ul>
+</li>
 <li>
 <p>endl:换行并刷新缓冲区</p>
 </li>
@@ -1380,25 +1858,31 @@
 <li>
 <p>读取一整行：</p>
 </li>
-</ul>
+<li>
 <div class="highlight"><pre><span></span><code><span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
-<span class="w">    </span><span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">);</span>
+<span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">);</span>
 </code></pre></div>
-<ul>
-<li>读取未知多行数据，一直读取到数据末尾EOF</li>
-</ul>
+</li>
+<li>
+<p>读取未知多行数据，一直读取到数据末尾EOF</p>
+</li>
+<li>
 <div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// code</span>
+<span class="w">    </span><span class="c1">// code</span>
 <span class="p">}</span>
 </code></pre></div>
-<ul>
-<li>读取文件和输出到文件</li>
-</ul>
+</li>
+<li>
+<p>读取文件和输出到文件</p>
+</li>
+<li>
 <div class="highlight"><pre><span></span><code><span class="n">freopen</span><span class="p">(</span><span class="s">&quot;input.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;r&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdin</span><span class="p">);</span>
 <span class="n">freopen</span><span class="p">(</span><span class="s">&quot;output.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;w&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdout</span><span class="p">);</span>
 </code></pre></div>
-<h3 id="working-with-numbers">Working With Numbers<a class="headerlink" href="#working-with-numbers" title="Permanent link">&para;</a></h3>
-<h4 id="integers">Integers<a class="headerlink" href="#integers" title="Permanent link">&para;</a></h4>
+</li>
+</ul>
+<h3 id="working-with-numbers">Working With Numbers｜处理数字<a class="headerlink" href="#working-with-numbers" title="Permanent link">&para;</a></h3>
+<h4 id="integers">Integers｜整数<a class="headerlink" href="#integers" title="Permanent link">&para;</a></h4>
 <ul>
 <li>数据范围</li>
 <li>32bit(int)：−2<sup>31</sup>...2<sup>31</sup>−1，大概-2 * 10<sup>9</sup>~2 * 10 <sup>9</sup></li>
@@ -1407,12 +1891,12 @@
 <li>两个int*int结果还是int</li>
 <li>g++ compiler支持128bit数据<code>__int128_t</code>，大概数据范围在-10<sup>38</sup>~10<sup>38</sup>(大多数竞赛都不允许此类型)</li>
 </ul>
-<h4 id="modular-arithmetic">Modular Arithmetic<a class="headerlink" href="#modular-arithmetic" title="Permanent link">&para;</a></h4>
+<h4 id="modular-arithmetic">Modular Arithmetic｜模运算<a class="headerlink" href="#modular-arithmetic" title="Permanent link">&para;</a></h4>
 <p>在某些答案特别大的情况下，为了照顾各语言的差异，所以都会对结果进行取模操作，常用的mod数为<code>1e9 + 7</code>，这样可以照顾到int和long数据类型。</p>
 <p>模运算等式：</p>
 <p><img alt="image-20231224222140117" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242221288.png" /></p>
 <p>负数的模运算为0或者负数。</p>
-<h4 id="floating-point-numbers">Floating Point Numbers<a class="headerlink" href="#floating-point-numbers" title="Permanent link">&para;</a></h4>
+<h4 id="floating-point-numbers">Floating Point Numbers｜浮点数<a class="headerlink" href="#floating-point-numbers" title="Permanent link">&para;</a></h4>
 <p>常用的是64bit的double类型，同时g++支持80bit的long double，大多数场景下64就够了，80的更为准确。</p>
 <p><code>printf("%.9f\n", x);</code>打印保留九位小数</p>
 <p>rounding errors：</p>
@@ -1424,7 +1908,7 @@
 <span class="w">        </span><span class="c1">// a and b are equal</span>
 <span class="p">}</span>
 </code></pre></div>
-<h3 id="shortening-code">Shortening Code<a class="headerlink" href="#shortening-code" title="Permanent link">&para;</a></h3>
+<h3 id="shortening-code">Shortening Code｜简化代码<a class="headerlink" href="#shortening-code" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>简化代码</p>
 </blockquote>
@@ -1469,8 +1953,8 @@
 <span class="w">        </span><span class="n">search</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<h3 id="mathematics">Mathematics<a class="headerlink" href="#mathematics" title="Permanent link">&para;</a></h3>
-<h4 id="sum-formulas">Sum Formulas<a class="headerlink" href="#sum-formulas" title="Permanent link">&para;</a></h4>
+<h3 id="mathematics">Mathematics｜算数运算<a class="headerlink" href="#mathematics" title="Permanent link">&para;</a></h3>
+<h4 id="sum-formulas">Sum Formulas｜求和公式<a class="headerlink" href="#sum-formulas" title="Permanent link">&para;</a></h4>
 <p>给出一些常用求和公式：</p>
 <p><img alt="image-20231224223515706" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242235744.png" /></p>
 <p><strong>arithmetic progression｜等差数列</strong></p>
@@ -1484,7 +1968,7 @@
 <p><img alt="image-20231224223858981" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242238022.png" /></p>
 <p><strong>harmonic sum｜谐波和</strong></p>
 <p><img alt="image-20231224223951624" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242239756.png" /></p>
-<h3 id="set-theory">Set Theory｜集合论<a class="headerlink" href="#set-theory" title="Permanent link">&para;</a></h3>
+<h4 id="set-theory">Set Theory｜集合论<a class="headerlink" href="#set-theory" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>A set is a collection of elements. For example, the set, X = {2, 4, 7}</p>
 </blockquote>
@@ -1506,7 +1990,7 @@
 <li>f(n)表示函数</li>
 <li>n表示参数，并且范围在S中</li>
 </ul>
-<h3 id="logic">Logic<a class="headerlink" href="#logic" title="Permanent link">&para;</a></h3>
+<h4 id="logic">Logic<a class="headerlink" href="#logic" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>The value of a logical expression is either true (1) or false (0). </p>
 <p>The most impor- tant logical operators are ¬ (negation), ∧ (conjunction), ∨ (disjunction), ⇒ (implication) and ⇔ (equivalence).</p>
@@ -1520,7 +2004,7 @@
 <p>Using the notation described above, we can express many kinds of logical propositions. For example,</p>
 </blockquote>
 <p>∀x((x&gt;1∧¬P(x))⇒(∃a(∃b(a&gt;1∧b&gt;1∧x=ab))))：表示如果一个数字x比1大并且不是素数，那么存在a和b，他们都都大于1并且乘积为x。当集合是整数时这个假设成立。</p>
-<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h3>
+<h4 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>ceil and floor:The function ⌊x⌋ rounds the number x down to an integer, and the function ⌈x⌉ rounds the number x up to an integer. For example,⌊3/2⌋ = 1 and ⌈3/2⌉ = 2.</p>
@@ -1543,21 +2027,25 @@
 <p><img alt="image-20231224225821628" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242258710.png" /></p>
 </li>
 </ul>
-<h3 id="logarithms">Logarithms｜对数<a class="headerlink" href="#logarithms" title="Permanent link">&para;</a></h3>
+<h4 id="logarithms">Logarithms｜对数<a class="headerlink" href="#logarithms" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>The logarithm of a number x is denoted logk(x), where k is the base of the logarithm. According to the definition, logk(x) = a exactly when k<sup>a</sup> = x.</p>
 </blockquote>
 <p><img alt="image-20231224230057079" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242300116.png" /></p>
 <p>The natural logarithm ln(x) of a number x is a logarithm whose base is e ≈ 2.71828. Another property of logarithms is that the number of digits of an integer x in base b is ⌊logb(x)+1⌋. For example, the representation of 123 in base 2 is 1111011 and ⌊log2(123) + 1⌋ = 7.</p>
-<h2 id="time-complexity">Time Complexity|时间复杂度<a class="headerlink" href="#time-complexity" title="Permanent link">&para;</a></h2>
-<h2 id="sorting">Sorting|排序<a class="headerlink" href="#sorting" title="Permanent link">&para;</a></h2>
-<h2 id="data-structures">Data Structures|数据结构<a class="headerlink" href="#data-structures" title="Permanent link">&para;</a></h2>
-<h2 id="complete-search">Complete Search|穷举搜索<a class="headerlink" href="#complete-search" title="Permanent link">&para;</a></h2>
-<h2 id="greedy-algorithms">Greedy Algorithms|贪心算法<a class="headerlink" href="#greedy-algorithms" title="Permanent link">&para;</a></h2>
-<h2 id="dynamic-programming">Dynamic Programming|动态规划<a class="headerlink" href="#dynamic-programming" title="Permanent link">&para;</a></h2>
-<h2 id="amortized-analusis">Amortized Analusis|平摊分析<a class="headerlink" href="#amortized-analusis" title="Permanent link">&para;</a></h2>
-<h2 id="range-queries">Range Queries|范围查询<a class="headerlink" href="#range-queries" title="Permanent link">&para;</a></h2>
-<h2 id="bit-manipulation">Bit Manipulation|位操作<a class="headerlink" href="#bit-manipulation" title="Permanent link">&para;</a></h2>
+<h3 id="contests-and-resources">Contests and resources｜比赛和资源<a class="headerlink" href="#contests-and-resources" title="Permanent link">&para;</a></h3>
+<h4 id="ioi">IOI｜国际奥林匹克信息竞赛<a class="headerlink" href="#ioi" title="Permanent link">&para;</a></h4>
+<h4 id="icpc">ICPC｜国际高校编程比赛<a class="headerlink" href="#icpc" title="Permanent link">&para;</a></h4>
+<h4 id="online-contests">Online Contests｜在线比赛<a class="headerlink" href="#online-contests" title="Permanent link">&para;</a></h4>
+<h2 id="time-complexity">Time Complexity｜时间复杂度<a class="headerlink" href="#time-complexity" title="Permanent link">&para;</a></h2>
+<h2 id="sorting">Sorting｜排序<a class="headerlink" href="#sorting" title="Permanent link">&para;</a></h2>
+<h2 id="data-structures">Data Structures｜数据结构<a class="headerlink" href="#data-structures" title="Permanent link">&para;</a></h2>
+<h2 id="complete-search">Complete Search｜穷举搜索<a class="headerlink" href="#complete-search" title="Permanent link">&para;</a></h2>
+<h2 id="greedy-algorithms">Greedy Algorithms｜贪心算法<a class="headerlink" href="#greedy-algorithms" title="Permanent link">&para;</a></h2>
+<h2 id="dynamic-programming">Dynamic Programming｜动态规划<a class="headerlink" href="#dynamic-programming" title="Permanent link">&para;</a></h2>
+<h2 id="amortized-analusis">Amortized Analusis｜平摊分析<a class="headerlink" href="#amortized-analusis" title="Permanent link">&para;</a></h2>
+<h2 id="range-queries">Range Queries｜范围查询<a class="headerlink" href="#range-queries" title="Permanent link">&para;</a></h2>
+<h2 id="bit-manipulation">Bit Manipulation｜位操作<a class="headerlink" href="#bit-manipulation" title="Permanent link">&para;</a></h2>
 
 
 
