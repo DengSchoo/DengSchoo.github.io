@@ -5,7 +5,7 @@
   - 算法资料
 - 英语
   - 阅读
-  - 口语
+  - 口语：[Udemy高分 美国英语口语发音课程 （中英字幕）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Nz4y1F7J3/?spm_id_from=333.337.search-card.all.click&vd_source=0f47d40de7d42a2d663d29d6e07c00fd)
   - 单词
   - 语法
 - 技术
