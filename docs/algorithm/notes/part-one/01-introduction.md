@@ -1,8 +1,6 @@
-# Part I: Basic techniques
+# Introduction｜简介
 
-## Introduction｜简介
-
-### Programming Language｜变成语言
+## Programming Language｜变成语言
 
 > At the moment, the most popular programming languages used in contests are C++, Python and Java. For example, in Google Code Jam 2017, among the best 3,000 participants, 79 % used C++, 16 % used Python and 8 % used Java [29]. Some participants also used several languages.
 
@@ -12,7 +10,7 @@
 - java：Collection库以及Util库刷题也不错
 - c++(11+)：因为带有STL支持各种数据结构以及附带算法，比较适合做算法题。本文以cpp 11版本书写代码。
 
-#### C++ Code Template｜代码模板
+### C++ Code Template｜代码模板
 
 A typical C++ code template:
 
@@ -34,7 +32,7 @@ int main() {
     - `-O2`：优化代码
     - `-Wall`：展示警告和可能的错误
 
-### Input And Output｜输入与输出
+## Input And Output｜输入与输出
 
 - Input : cin,可以忽略中间空格以及换行
 
@@ -85,9 +83,9 @@ int main() {
     freopen("output.txt", "w", stdout);
     ```
 
-### Working With Numbers｜处理数字
+## Working With Numbers｜处理数字
 
-#### Integers｜整数
+### Integers｜整数
 
 - 数据范围
     - 32bit(int)：−2^31^...2^31^−1，大概-2 * 10^9^~2 * 10 ^9^
@@ -98,7 +96,7 @@ int main() {
 
 
 
-#### Modular Arithmetic｜模运算
+### Modular Arithmetic｜模运算
 
 在某些答案特别大的情况下，为了照顾各语言的差异，所以都会对结果进行取模操作，常用的mod数为`1e9 + 7`，这样可以照顾到int和long数据类型。
 
@@ -110,7 +108,7 @@ int main() {
 
 
 
-#### Floating Point Numbers｜浮点数
+### Floating Point Numbers｜浮点数
 
 常用的是64bit的double类型，同时g++支持80bit的long double，大多数场景下64就够了，80的更为准确。
 
@@ -134,11 +132,11 @@ if (abs(a-b) < 1e-9) {
 
 
 
-### Shortening Code｜简化代码
+## Shortening Code｜简化代码
 
 > 简化代码
 
-#### Type Names｜类型名称
+### Type Names｜类型名称
 
 用`typedef`来给出一个简短的类型名称.
 
@@ -154,7 +152,7 @@ typedef vector<int> vi;
 typedef pair<int,int> pi;
 ```
 
-#### Macros｜宏定义
+### Macros｜宏定义
 
 > A macro means that certain strings in the code will be changed before the compilation.In C++, macros are defined using the #define keyword.
 
@@ -200,9 +198,9 @@ REP(i,1,n) {
 
 
 
-### Mathematics｜算数运算
+## Mathematics｜算数运算
 
-#### Sum Formulas｜求和公式
+### Sum Formulas｜求和公式
 
 给出一些常用求和公式：
 
@@ -230,7 +228,7 @@ exp：`3, 7, 11, 15`
 
 
 
-#### Set Theory｜集合论
+### Set Theory｜集合论
 
 > A set is a collection of elements. For example, the set, X = {2, 4, 7}
 
@@ -251,7 +249,7 @@ exp：`3, 7, 11, 15`
     - f(n)表示函数
     - n表示参数，并且范围在S中
 
-#### Logic｜逻辑运算 
+### Logic｜逻辑运算
 
 > The value of a logical expression is either true (1) or false (0). 
 >
@@ -268,7 +266,7 @@ exp：`3, 7, 11, 15`
 
 
 
-#### Functions｜计算函数
+### Functions｜计算函数
 
 - ceil and floor:The function ⌊x⌋ rounds the number x down to an integer, and the function ⌈x⌉ rounds the number x up to an integer. For example,⌊3/2⌋ = 1 and ⌈3/2⌉ = 2.
 
@@ -286,7 +284,7 @@ exp：`3, 7, 11, 15`
 
         ![image-20231224225821628](https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242258710.png)
 
-#### Logarithms｜对数
+### Logarithms｜对数
 
 > The logarithm of a number x is denoted logk(x), where k is the base of the logarithm. According to the definition, logk(x) = a exactly when k^a^ = x.
 
@@ -296,56 +294,61 @@ The natural logarithm ln(x) of a number x is a logarithm whose base is e ≈ 2.7
 
 
 
-### Contests and resources｜比赛和资源
+## Contests and resources｜比赛和资源
 
-#### IOI｜国际奥林匹克信息竞赛
+### IOI｜国际奥林匹克信息竞赛
 
+> The International Olympiad in Informatics (IOI) is an annual programming contest for secondary school students.
 
+- 每个国家都会送一支队伍进入这个比赛。自从80年代开始通常都会有300只队伍。
 
-#### ICPC｜国际高校编程比赛
+- 比赛包含两个五小时的比赛。在这两个比赛中，参赛队伍需要解决3个不同难度的算法。每一个任务都会被拆分为多个子任务，每个子任务都被赋予了一个分数。即使参赛队员被分为多个队伍，但是他们还是各自为战。
 
-
-
-#### Online Contests｜在线比赛
-
-
-
-## Time Complexity｜时间复杂度
+- 出现在IOI中的考题是从IOI大纲中来的
+- IOI的参赛者都是从国家纬度的比赛筛选的过来的。在IOI之前还有区域性的比赛必入BOI、CEOI、APIO。
+- 有一些国家会为IOI选手组织在线的练习赛，必入Croatian Open Competition in Informatics、USA computing Olympiad等
 
 
 
-## Sorting｜排序
+### ICPC｜国际高校编程比赛
+
+- The International Collegiate Programming Contest (ICPC)
+- 专门为学校开设的，每支队伍包含三名选手，不像IOI，他们一起解决问题，每支队伍只有一台电脑
+- ICPC包含多个阶段，最终最优秀的队伍将被邀请进入世界决赛。尽管参赛的选手不计其数，但是总的决赛资格就那么几个，所以在某些国家进入决赛就已经说明很了不起了。
+- 在每个ICPC比赛中，参赛队伍有五个小时时间去解决十道算法题目。一个解决方案仅在它高效的通过所有的case之后才算接受。在比赛期间，竞争者们可以查看他们的队伍的结果，但是在最后一个小时，积分榜会冻结并且看不到最后一个提交的结果。
+- 出现在ICPC中的内容跟IOI相比没有特别的明确。在所有情况下，可以明确的是在ICPC中更多的知识尤其是数学知识是特别需要的。
 
 
 
+### Online Contests｜在线比赛
 
-
-## Data Structures｜数据结构
-
-
-
-## Complete Search｜穷举搜索
-
-
-
-
-
-## Greedy Algorithms｜贪心算法
+- 现在有许多在线的比赛，公开给每个人。目前为止最活跃的比赛是Codeforces，它每周都会举办一个周赛。在cf中，参赛者被分为两只分支：初学者在Div2中，高手在Div1中。其他在线网站包括AtCoder，Cs Academy，hackerRank，Topcoder。
+- 其他公司也会组织一些在线比赛：Facebook Hacker Cup，Google Code Jam and Yandex。这些公司经常使用这些比赛来做招聘：比赛排名高展示了某人的能力如何。
+- 目前还有其他的专门做算法的公司：
+    - [LeetCode](https://leetcode.com/)：开始双周赛、周赛、每日一题、学习资源等。
+    - [Acwing](https://www.acwing.com/)：国内的一家算法公司，也有双周赛、周赛，会卖算法课等
 
 
 
 
 
-## Dynamic Programming｜动态规划
 
 
 
-## Amortized Analusis｜平摊分析
 
 
 
-## Range Queries｜范围查询
 
 
 
-## Bit Manipulation｜位操作
+
+
+
+
+
+
+
+
+
+
+

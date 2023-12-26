@@ -100,8 +100,8 @@ nav:
     - LC Weekly Contest:
       - Algorithm/lc-weekly/lc-376th.md
       - Algorithm/lc-weekly/lc-377th.md
-    - Note:
-      - Algorithm/notes/partI-basic-techs.md
+    - Notes:
+      - Algorithm/notes/part-one/01-introduction.md
   - English:
     - article-trans:
       - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md

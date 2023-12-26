@@ -845,7 +845,7 @@
           <li class="md-nav__item">
   <a href="#type-names" class="md-nav__link">
     <span class="md-ellipsis">
-      Type Names
+      Type Names｜类型名称
     </span>
   </a>
   
@@ -854,7 +854,7 @@
           <li class="md-nav__item">
   <a href="#macros" class="md-nav__link">
     <span class="md-ellipsis">
-      Macros
+      Macros｜宏定义
     </span>
   </a>
   
@@ -896,7 +896,7 @@
           <li class="md-nav__item">
   <a href="#logic" class="md-nav__link">
     <span class="md-ellipsis">
-      Logic
+      Logic｜逻辑运算
     </span>
   </a>
   
@@ -905,7 +905,7 @@
           <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Functions
+      Functions｜计算函数
     </span>
   </a>
   
@@ -1566,7 +1566,7 @@
           <li class="md-nav__item">
   <a href="#type-names" class="md-nav__link">
     <span class="md-ellipsis">
-      Type Names
+      Type Names｜类型名称
     </span>
   </a>
   
@@ -1575,7 +1575,7 @@
           <li class="md-nav__item">
   <a href="#macros" class="md-nav__link">
     <span class="md-ellipsis">
-      Macros
+      Macros｜宏定义
     </span>
   </a>
   
@@ -1617,7 +1617,7 @@
           <li class="md-nav__item">
   <a href="#logic" class="md-nav__link">
     <span class="md-ellipsis">
-      Logic
+      Logic｜逻辑运算
     </span>
   </a>
   
@@ -1626,7 +1626,7 @@
           <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Functions
+      Functions｜计算函数
     </span>
   </a>
   
@@ -1803,51 +1803,55 @@
 </ul>
 <h4 id="c-code-template">C++ Code Template｜代码模板<a class="headerlink" href="#c-code-template" title="Permanent link">&para;</a></h4>
 <p>A typical C++ code template:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
 <span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// solution comes here</span>
 <span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello World!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><code>#include</code> is a feture of g++ compiler that allows up to import libs.</li>
 <li><code>bits/stdc++.h</code>是万能库包含常用的库文件</li>
 <li><code>using namespace std;</code>表示类和函数可以直接在代码中使用，如果除去这一句，举个例子你的输出写法前面就要加上<code>std::cout</code></li>
-<li>运行code：<code>g++ -std=c++11 -O2 -Wall test.cpp -o test</code></li>
+<li>运行code：<code>g++ -std=c++11 -O2 -Wall test.cpp -o test</code><ul>
 <li><code>-std=c++11</code>：表示使用cpp11语法标准</li>
 <li><code>-O2</code>：优化代码</li>
 <li><code>-Wall</code>：展示警告和可能的错误</li>
 </ul>
+</li>
+</ul>
 <h3 id="input-and-output">Input And Output｜输入与输出<a class="headerlink" href="#input-and-output" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>Input : cin</p>
-</li>
-<li>
-<p>可以忽略中间空格以及换行</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<p>Input : cin,可以忽略中间空格以及换行</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
 <span class="n">string</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
 <span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>Output : cout stream</p>
-</li>
-<li>
-<p>输出流：</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">456</span><span class="p">;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">456</span><span class="p">;</span>
 <span class="n">string</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;monkey&quot;</span><span class="p">;</span>
 <span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>优化输入输出速度：</p>
-</li>
-<li>
-<div class="highlight"><pre><span></span><code><span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 <span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>endl:换行并刷新缓冲区</p>
@@ -1857,36 +1861,36 @@
 </li>
 <li>
 <p>读取一整行：</p>
-</li>
-<li>
-<div class="highlight"><pre><span></span><code><span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
 <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">);</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>读取未知多行数据，一直读取到数据末尾EOF</p>
-</li>
-<li>
-<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// code</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 </li>
 <li>
 <p>读取文件和输出到文件</p>
-</li>
-<li>
-<div class="highlight"><pre><span></span><code><span class="n">freopen</span><span class="p">(</span><span class="s">&quot;input.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;r&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdin</span><span class="p">);</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">freopen</span><span class="p">(</span><span class="s">&quot;input.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;r&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdin</span><span class="p">);</span>
 <span class="n">freopen</span><span class="p">(</span><span class="s">&quot;output.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;w&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">stdout</span><span class="p">);</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 </li>
 </ul>
 <h3 id="working-with-numbers">Working With Numbers｜处理数字<a class="headerlink" href="#working-with-numbers" title="Permanent link">&para;</a></h3>
 <h4 id="integers">Integers｜整数<a class="headerlink" href="#integers" title="Permanent link">&para;</a></h4>
 <ul>
-<li>数据范围</li>
+<li>数据范围<ul>
 <li>32bit(int)：−2<sup>31</sup>...2<sup>31</sup>−1，大概-2 * 10<sup>9</sup>~2 * 10 <sup>9</sup></li>
 <li>64bit(long long): 2<sup>63</sup>...2<sup>63</sup>−1，大概−9·10<sup>18</sup> ...9·10<sup>18</sup></li>
+</ul>
+</li>
 <li>LL标识long long类型：<code>long long x = 123456789123456789LL;</code></li>
 <li>两个int*int结果还是int</li>
 <li>g++ compiler支持128bit数据<code>__int128_t</code>，大概数据范围在-10<sup>38</sup>~10<sup>38</sup>(大多数竞赛都不允许此类型)</li>
@@ -1900,59 +1904,82 @@
 <p>常用的是64bit的double类型，同时g++支持80bit的long double，大多数场景下64就够了，80的更为准确。</p>
 <p><code>printf("%.9f\n", x);</code>打印保留九位小数</p>
 <p>rounding errors：</p>
-<div class="highlight"><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.3</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="mf">0.1</span><span class="p">;</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%.20f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// 0.99999999999999988898</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.3</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="mf">0.1</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%.20f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// 0.99999999999999988898</span>
+</code></pre></div></td></tr></table></div>
 <p>因为存在舍入误差所以对于浮点数的比较要用：</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">1e-9</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="c1">// a and b are equal</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">1e-9</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// a and b are equal</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <h3 id="shortening-code">Shortening Code｜简化代码<a class="headerlink" href="#shortening-code" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>简化代码</p>
 </blockquote>
-<h4 id="type-names">Type Names<a class="headerlink" href="#type-names" title="Permanent link">&para;</a></h4>
+<h4 id="type-names">Type Names｜类型名称<a class="headerlink" href="#type-names" title="Permanent link">&para;</a></h4>
 <p>用<code>typedef</code>来给出一个简短的类型名称.</p>
-<div class="highlight"><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ll</span><span class="p">;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ll</span><span class="p">;</span>
 <span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">123456789</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">987654321</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">vi</span><span class="p">;</span>
-<span class="w">    </span><span class="k">typedef</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pi</span><span class="p">;</span>
-</code></pre></div>
-<h4 id="macros">Macros<a class="headerlink" href="#macros" title="Permanent link">&para;</a></h4>
+<span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">987654321</span><span class="p">;</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">typedef</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">vi</span><span class="p">;</span>
+<span class="k">typedef</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pi</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="macros">Macros｜宏定义<a class="headerlink" href="#macros" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>A macro means that certain strings in the code will be changed before the compilation.In C++, macros are defined using the #define keyword.</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><span class="cp">#define F first</span>
-<span class="w">    </span><span class="cp">#define S second</span>
-<span class="w">    </span><span class="cp">#define PB push_back</span>
-<span class="w">    </span><span class="cp">#define MP make_pair</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#define F first</span>
+<span class="cp">#define S second</span>
+<span class="cp">#define PB push_back</span>
+<span class="w"> </span><span class="cp">#define MP make_pair</span>
+</code></pre></div></td></tr></table></div>
 <p>code:</p>
-<div class="highlight"><pre><span></span><code><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span><span class="n">x1</span><span class="p">));</span>
-<span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span><span class="n">x2</span><span class="p">));</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="o">+</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">second</span><span class="p">;</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span><span class="n">x1</span><span class="p">));</span>
+<span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span><span class="n">x2</span><span class="p">));</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="o">+</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">second</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
 <p>Shortend:</p>
-<div class="highlight"><pre><span></span><code><span class="n">v</span><span class="p">.</span><span class="n">PB</span><span class="p">(</span><span class="n">MP</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span><span class="n">x1</span><span class="p">));</span>
-<span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">PB</span><span class="p">(</span><span class="n">MP</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span><span class="n">x2</span><span class="p">));</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">F</span><span class="o">+</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">S</span><span class="p">;</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">v</span><span class="p">.</span><span class="n">PB</span><span class="p">(</span><span class="n">MP</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span><span class="n">x1</span><span class="p">));</span>
+<span class="n">v</span><span class="p">.</span><span class="n">PB</span><span class="p">(</span><span class="n">MP</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span><span class="n">x2</span><span class="p">));</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">F</span><span class="o">+</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">S</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
 <p>Macro param:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#define REP(i,a,b) for (int i = a; i &lt;= b; i++)</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="cp">#define REP(i,a,b) for (int i = a; i &lt;= b; i++)</span>
 
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">search</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="w">    </span><span class="n">search</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="c1">// to </span>
 <span class="n">REP</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">search</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="w">    </span><span class="n">search</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
 <span class="p">}</span>
-</code></pre></div>
+</code></pre></div></td></tr></table></div>
 <h3 id="mathematics">Mathematics｜算数运算<a class="headerlink" href="#mathematics" title="Permanent link">&para;</a></h3>
 <h4 id="sum-formulas">Sum Formulas｜求和公式<a class="headerlink" href="#sum-formulas" title="Permanent link">&para;</a></h4>
 <p>给出一些常用求和公式：</p>
@@ -1975,22 +2002,28 @@
 <ul>
 <li>|S|表示S的size</li>
 <li>如果S中包含一个x，写做x ∈ S，否者 x ∉ S</li>
-<li>集合操作</li>
+<li>集合操作<ul>
 <li>The intersection A ∩ B｜取交集</li>
 <li>The union A ∪ B｜取并集</li>
 <li>The complement A ̄｜取反</li>
 <li>The difference A  B = A ∩ B ̄｜将B的元素从A中移除</li>
+</ul>
+</li>
 <li>subset：A中元素都存在于S，写做A ⊂ S，一个集合的子集格数为2<sup>|S|</sup>，包含空集</li>
-<li>字符表示</li>
+<li>字符表示<ul>
 <li>N (natural numbers), </li>
 <li>Z (integers), </li>
 <li>Q (rational numbers)</li>
 <li>R (real numbers)</li>
-<li>表示一个集合：<code>{f(n):n∈S},</code></li>
+</ul>
+</li>
+<li>表示一个集合：<code>{f(n):n∈S},</code><ul>
 <li>f(n)表示函数</li>
 <li>n表示参数，并且范围在S中</li>
 </ul>
-<h4 id="logic">Logic<a class="headerlink" href="#logic" title="Permanent link">&para;</a></h4>
+</li>
+</ul>
+<h4 id="logic">Logic｜逻辑运算<a class="headerlink" href="#logic" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>The value of a logical expression is either true (1) or false (0). </p>
 <p>The most impor- tant logical operators are ¬ (negation), ∧ (conjunction), ∨ (disjunction), ⇒ (implication) and ⇔ (equivalence).</p>
@@ -2004,7 +2037,7 @@
 <p>Using the notation described above, we can express many kinds of logical propositions. For example,</p>
 </blockquote>
 <p>∀x((x&gt;1∧¬P(x))⇒(∃a(∃b(a&gt;1∧b&gt;1∧x=ab))))：表示如果一个数字x比1大并且不是素数，那么存在a和b，他们都都大于1并且乘积为x。当集合是整数时这个假设成立。</p>
-<h4 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h4>
+<h4 id="functions">Functions｜计算函数<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h4>
 <ul>
 <li>
 <p>ceil and floor:The function ⌊x⌋ rounds the number x down to an integer, and the function ⌈x⌉ rounds the number x up to an integer. For example,⌊3/2⌋ = 1 and ⌈3/2⌉ = 2.</p>
@@ -2014,17 +2047,17 @@
 </li>
 <li>
 <p>The factorial n! can be defined</p>
-</li>
-</ul>
 <p><img alt="image-20231224225721572" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257658.png" /></p>
-<ul>
-<li>Fibonacci numbers｜斐波那契数列:</li>
-</ul>
+</li>
+<li>
+<p>Fibonacci numbers｜斐波那契数列:</p>
 <p><img alt="image-20231224225750219" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257254.png" /></p>
 <ul>
 <li>
 <p>Binet’s formula｜比奈公式:</p>
 <p><img alt="image-20231224225821628" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242258710.png" /></p>
+</li>
+</ul>
 </li>
 </ul>
 <h4 id="logarithms">Logarithms｜对数<a class="headerlink" href="#logarithms" title="Permanent link">&para;</a></h4>
