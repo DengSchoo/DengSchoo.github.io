@@ -12,26 +12,24 @@
         <meta name="author" content="邓世豪">
       
       
-        <link rel="canonical" href="https://dengschoo.github.io/Logger/Projects/help-gf-with-openAI/">
-      
-      
-        <link rel="prev" href="../../Life/travel/yun-nan/">
+        <link rel="canonical" href="https://dengschoo.github.io/Logger/Algorithm/notes/part-one/10-bit-manipulation/">
       
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
     
     
       
-        <title>【教程】从0到1调用ChatGPT快速帮女朋友赚外快 - Deng's Life Logger.</title>
+        <title>10 bit manipulation - Deng's Life Logger.</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -91,13 +89,13 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/basic.css">
+      <link rel="stylesheet" href="../../../../stylesheets/basic.css">
     
-      <link rel="stylesheet" href="../../stylesheets/admonition.css">
+      <link rel="stylesheet" href="../../../../stylesheets/admonition.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -123,7 +121,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01chatgpt" class="md-skip">
+        <a href="#bit-manipulation" class="md-skip">
           跳转至
         </a>
       
@@ -137,7 +135,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="Deng&#39;s Life Logger." class="md-header__button md-logo" aria-label="Deng's Life Logger." data-md-component="logo">
+    <a href="../../../.." title="Deng&#39;s Life Logger." class="md-header__button md-logo" aria-label="Deng's Life Logger." data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -157,7 +155,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              【教程】从0到1调用ChatGPT快速帮女朋友赚外快
+              10 bit manipulation
             
           </span>
         </div>
@@ -268,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href="../../../.." class="md-tabs__link">
           
   
     
@@ -288,7 +286,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Algorithm/" class="md-tabs__link">
+        <a href="../../../" class="md-tabs__link">
           
   
     
@@ -314,7 +312,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures/" class="md-tabs__link">
+        <a href="../../../../English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures/" class="md-tabs__link">
           
   
     
@@ -343,7 +341,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Life/travel/yun-nan/" class="md-tabs__link">
+        <a href="../../../../Life/travel/yun-nan/" class="md-tabs__link">
           
   
     
@@ -362,21 +360,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../Projects/help-gf-with-openAI/" class="md-tabs__link">
           
   
     
@@ -414,7 +408,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Deng&#39;s Life Logger." class="md-nav__button md-logo" aria-label="Deng's Life Logger." data-md-component="logo">
+    <a href="../../../.." title="Deng&#39;s Life Logger." class="md-nav__button md-logo" aria-label="Deng's Life Logger." data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -467,7 +461,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../.." class="md-nav__link ">
+            <a href="../../../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -529,7 +523,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Algorithm/" class="md-nav__link ">
+            <a href="../../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -605,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Algorithm/lc-weekly/lc-376th/" class="md-nav__link">
+      <a href="../../../lc-weekly/lc-376th/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -626,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Algorithm/lc-weekly/lc-377th/" class="md-nav__link">
+      <a href="../../../lc-weekly/lc-377th/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Algorithm/notes/part-one/01-introduction/" class="md-nav__link">
+      <a href="../01-introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -817,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures/" class="md-nav__link">
+      <a href="../../../../English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -938,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Life/travel/yun-nan/" class="md-nav__link">
+      <a href="../../../../Life/travel/yun-nan/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -971,10 +965,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -987,12 +979,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -1006,7 +998,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Project
@@ -1017,8 +1009,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1030,12 +1020,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
         
           
           <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
@@ -1049,7 +1039,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_1">
             <span class="md-nav__icon md-icon"></span>
             ML Related
@@ -1060,30 +1050,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    【教程】从0到1调用ChatGPT快速帮女朋友赚外快
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../Projects/help-gf-with-openAI/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1092,97 +1062,6 @@
   
 
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Content">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Content
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.背景
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.环境准备
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2.环境准备">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-openai" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 OpenAI账号准备
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-openai-keys" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 OpenAI-Keys准备
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 开发环境
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.代码详解
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.效果展示
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1222,8 +1101,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1232,69 +1109,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#bit-manipulation" class="md-nav__link">
     <span class="md-ellipsis">
-      1.背景
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.环境准备
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2.环境准备">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-openai" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 OpenAI账号准备
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-openai-keys" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 OpenAI-Keys准备
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 开发环境
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.代码详解
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.效果展示
+      Bit Manipulation｜位操作
     </span>
   </a>
   
@@ -1315,308 +1132,9 @@
                   
 
 
-<h1 id="01chatgpt">【教程】从0到1调用ChatGPT快速帮女朋友赚外快<a class="headerlink" href="#01chatgpt" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>本文记录学习openAI接入学习过程（Python版）以及小项目实战。</p>
-</blockquote>
-<h2 id="1">1.背景<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>最近npy找到了一个模型效果评估的任务，主要内容是从专业角度出发评估他们的模型的优化效果，一组优化效果评估由一个原始英语句子，三个他们模型简化总结后的句子。</p>
-<p>要求从以下三个方面评估三个简化后的效果：</p>
-<ul>
-<li>简洁性：不是简单句扣1分、意译为更简单的就比另外两句多1分；</li>
-<li>流畅性：曲解句子一处扣1分、标点符号不准确扣1分、语法or搭配不对扣1分；</li>
-<li>充分性：漏译一处扣1分</li>
-</ul>
-<p>一个例子：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>105复杂句：Convinced that the grounds were haunted, they decided to publish their findings in a book An Adventure (1911), under the pseudonyms of Elizabeth Morison and Frances Lamont.
-简化句1：They believed the grounds were haunted. They decided to publish their findings in a book. They used the names of Elizabeth Morison and Frances Lamont.
-简化句2：Convinced that the grounds were haunted, they decided to publish what they found in a book called An Adventure. They used the names Elizabeth Morison and Frances Lamont.
-简化句3：Convinced that the grounds were haunted, they decided to publish their findings in a book called An Adventure (1911). They used the names Elizabeth Morison and Frances Lamont.
-句1得分：流畅性[]；简洁性[]；充分性[]
-句2得分：流畅性[]；简洁性[]；充分性[]
-句3得分：流畅性[]；简洁性[]；充分性[]
-</code></pre></div></td></tr></table></div>
-<p><code>[]</code>中写你的评分，满分5分，共句子组有380+组，如果人工评估的话过于麻烦了，在这个场景使用chatgpt最合适不过，于是开始着手开发一个小项目来实现快速的评估。</p>
-<h2 id="2">2.环境准备<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<h3 id="21-openai">2.1 OpenAI账号准备<a class="headerlink" href="#21-openai" title="Permanent link">&para;</a></h3>
-<p><a href="https://platform.openai.com/overview">Overview - OpenAI API</a></p>
-<p>需要准备以下账号：</p>
-<ul>
-<li>谷歌账号：Gmail（国内手机号即可注册）</li>
-<li>OpenAI账号（使用谷歌账号快速登陆）</li>
-</ul>
-<h3 id="22-openai-keys">2.2 OpenAI-Keys准备<a class="headerlink" href="#22-openai-keys" title="Permanent link">&para;</a></h3>
-<p><a href="https://platform.openai.com/api-keys">API Reference - OpenAI API</a></p>
-<p>申请OpenApi-Keys的时候需要接外国手机号的验证码，所以还需要接码平台。</p>
-<p>便宜接码平台：因为新手机号有额外13美元免费额度，绑定过的手机号接码平台只有5美金免费额度，也够用了。</p>
-<ul>
-<li><a href="https://onlinesim.io/">onlinesim.io</a>（1美元起充，我用的这个，推荐）</li>
-<li><a href="https://sms-activate.org/cn">SMS-Activate</a>(2美元起充)</li>
-</ul>
-<p>最后自己创建一个自己的API Keys即可（需要自己复制到其他地方，只展示一次，可以删除再创接）：</p>
-<p><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312231109822.png" alt="image-20231223110952749" style="zoom:33%;" /></p>
-<h3 id="23">2.3 开发环境<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
-<p>OpenAPI最新官方文档：<a href="https://platform.openai.com/docs/api-reference/introduction">API Reference - OpenAI API</a></p>
-<p>我这里参照了老版本的教程，新老都可以，版本影响的是endpoint，endpoint决定之差哪些模型调用。这里给出我的环境准备。</p>
-<ul>
-<li>python就不说了</li>
-<li><code>pip install openai==0.27.0</code>只需要这个依赖</li>
-</ul>
-<h2 id="3">3.代码详解<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>因为本身不是专业写python的，代码有点矬但是能跑就行。</p>
-</blockquote>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">  1</span>
-<span class="normal">  2</span>
-<span class="normal">  3</span>
-<span class="normal">  4</span>
-<span class="normal">  5</span>
-<span class="normal">  6</span>
-<span class="normal">  7</span>
-<span class="normal">  8</span>
-<span class="normal">  9</span>
-<span class="normal"> 10</span>
-<span class="normal"> 11</span>
-<span class="normal"> 12</span>
-<span class="normal"> 13</span>
-<span class="normal"> 14</span>
-<span class="normal"> 15</span>
-<span class="normal"> 16</span>
-<span class="normal"> 17</span>
-<span class="normal"> 18</span>
-<span class="normal"> 19</span>
-<span class="normal"> 20</span>
-<span class="normal"> 21</span>
-<span class="normal"> 22</span>
-<span class="normal"> 23</span>
-<span class="normal"> 24</span>
-<span class="normal"> 25</span>
-<span class="normal"> 26</span>
-<span class="normal"> 27</span>
-<span class="normal"> 28</span>
-<span class="normal"> 29</span>
-<span class="normal"> 30</span>
-<span class="normal"> 31</span>
-<span class="normal"> 32</span>
-<span class="normal"> 33</span>
-<span class="normal"> 34</span>
-<span class="normal"> 35</span>
-<span class="normal"> 36</span>
-<span class="normal"> 37</span>
-<span class="normal"> 38</span>
-<span class="normal"> 39</span>
-<span class="normal"> 40</span>
-<span class="normal"> 41</span>
-<span class="normal"> 42</span>
-<span class="normal"> 43</span>
-<span class="normal"> 44</span>
-<span class="normal"> 45</span>
-<span class="normal"> 46</span>
-<span class="normal"> 47</span>
-<span class="normal"> 48</span>
-<span class="normal"> 49</span>
-<span class="normal"> 50</span>
-<span class="normal"> 51</span>
-<span class="normal"> 52</span>
-<span class="normal"> 53</span>
-<span class="normal"> 54</span>
-<span class="normal"> 55</span>
-<span class="normal"> 56</span>
-<span class="normal"> 57</span>
-<span class="normal"> 58</span>
-<span class="normal"> 59</span>
-<span class="normal"> 60</span>
-<span class="normal"> 61</span>
-<span class="normal"> 62</span>
-<span class="normal"> 63</span>
-<span class="normal"> 64</span>
-<span class="normal"> 65</span>
-<span class="normal"> 66</span>
-<span class="normal"> 67</span>
-<span class="normal"> 68</span>
-<span class="normal"> 69</span>
-<span class="normal"> 70</span>
-<span class="normal"> 71</span>
-<span class="normal"> 72</span>
-<span class="normal"> 73</span>
-<span class="normal"> 74</span>
-<span class="normal"> 75</span>
-<span class="normal"> 76</span>
-<span class="normal"> 77</span>
-<span class="normal"> 78</span>
-<span class="normal"> 79</span>
-<span class="normal"> 80</span>
-<span class="normal"> 81</span>
-<span class="normal"> 82</span>
-<span class="normal"> 83</span>
-<span class="normal"> 84</span>
-<span class="normal"> 85</span>
-<span class="normal"> 86</span>
-<span class="normal"> 87</span>
-<span class="normal"> 88</span>
-<span class="normal"> 89</span>
-<span class="normal"> 90</span>
-<span class="normal"> 91</span>
-<span class="normal"> 92</span>
-<span class="normal"> 93</span>
-<span class="normal"> 94</span>
-<span class="normal"> 95</span>
-<span class="normal"> 96</span>
-<span class="normal"> 97</span>
-<span class="normal"> 98</span>
-<span class="normal"> 99</span>
-<span class="normal">100</span>
-<span class="normal">101</span>
-<span class="normal">102</span>
-<span class="normal">103</span>
-<span class="normal">104</span>
-<span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span>
-<span class="normal">113</span>
-<span class="normal">114</span>
-<span class="normal">115</span>
-<span class="normal">116</span>
-<span class="normal">117</span>
-<span class="normal">118</span>
-<span class="normal">119</span>
-<span class="normal">120</span>
-<span class="normal">121</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+  <h1>10 bit manipulation</h1>
 
-<span class="kn">import</span> <span class="nn">openai</span>
-<span class="kn">import</span> <span class="nn">json</span>
-
-<span class="c1"># 填你的秘钥</span>
-<span class="n">openai</span><span class="o">.</span><span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;sk-xxxxxx&quot;</span>
-<span class="c1"># 一些元数据</span>
-<span class="n">aspects</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Conciseness&#39;</span><span class="p">,</span> <span class="s1">&#39;Fluency&#39;</span><span class="p">,</span> <span class="s1">&#39;Sufficiency&#39;</span><span class="p">]</span>
-<span class="n">students</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">]</span>
-
-
-<span class="c1"># 提问代码</span>
-<span class="k">def</span> <span class="nf">chat_gpt</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="c1"># 你的问题</span>
-
-    <span class="c1"># 老版本调用写法，不支持调用gpt-3.5-turbo</span>
-
-    <span class="c1"># # 调用 ChatGPT 接口</span>
-    <span class="c1"># model_engine = &quot;text-davinci-003&quot;</span>
-    <span class="c1"># # model_engine = &quot;gpt-3.5-turbo&quot;</span>
-    <span class="c1"># completion = openai.Completion.create(</span>
-    <span class="c1">#     engine=model_engine,</span>
-    <span class="c1">#     prompt=prompt,</span>
-    <span class="c1">#     max_tokens=1024,</span>
-    <span class="c1">#     n=1,</span>
-    <span class="c1">#     stop=None,</span>
-    <span class="c1">#     temperature=0.5,</span>
-    <span class="c1"># )</span>
-    <span class="c1">#</span>
-    <span class="c1"># response = completion.choices[0].text</span>
-    <span class="c1"># return response</span>
-    <span class="c1"># Call the OpenAI API to generate a response</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">openai</span><span class="o">.</span><span class="n">ChatCompletion</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-        <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-3.5-turbo&quot;</span><span class="p">,</span>
-        <span class="n">messages</span><span class="o">=</span><span class="p">[{</span><span class="s1">&#39;role&#39;</span><span class="p">:</span> <span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="s1">&#39;content&#39;</span><span class="p">:</span> <span class="n">prompt</span><span class="p">}],</span>
-        <span class="n">max_tokens</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span>
-        <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-        <span class="n">temperature</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
-        <span class="n">top_p</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-        <span class="n">frequency_penalty</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
-        <span class="n">presence_penalty</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span>
-    <span class="p">)</span>
-    <span class="c1"># Get the response text from the API response</span>
-    <span class="n">response_text</span> <span class="o">=</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;choices&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;content&#39;</span><span class="p">]</span>
-
-    <span class="c1"># OPENAI自己做了流控，具体看官网</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">response_text</span>
-
-
-<span class="n">result_tmplate</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;句1得分：流畅性[]；简洁性[]；充分性[]&#39;</span>
-
-<span class="n">no_need</span> <span class="o">=</span> <span class="s1">&#39;[]&#39;</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-
-    <span class="n">separator</span> <span class="o">=</span> <span class="s1">&#39;：&#39;</span>
-
-    <span class="c1"># read file</span>
-    <span class="n">fr</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;formatted_sentences_100_250.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-    <span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;formatted_sentences_result_100-250.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w+&quot;</span><span class="p">)</span>
-    <span class="n">sentences</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">max_cnt</span> <span class="o">=</span> <span class="mi">400</span>
-    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fr</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">cnt</span> <span class="o">&gt;</span> <span class="n">max_cnt</span><span class="p">:</span>
-            <span class="k">break</span>
-        <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">separator</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">line</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">no_need</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
-            <span class="k">continue</span>
-        <span class="n">sentence</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">separator</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-        <span class="n">sentences</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
-        <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
-            <span class="c1"># 处理结果</span>
-            <span class="n">promt</span> <span class="o">=</span> <span class="p">(</span>
-                <span class="sa">f</span><span class="s1">&#39;From now on you are a teacher who is responsible for grading students(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;) on the simplified results of the original sentences you propose out on a scale of 5. &#39;</span>
-                <span class="sa">f</span><span class="s1">&#39;From the following three aspects: </span><span class="si">{</span><span class="n">aspects</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">aspects</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">aspects</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span>
-                <span class="s1">&#39;Here is a example:&#39;</span>
-                <span class="sa">f</span><span class="s1">&#39;original：</span><span class="si">{</span><span class="n">sentence</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span>
-                <span class="sa">f</span><span class="s1">&#39;&quot;A&quot;:</span><span class="si">{</span><span class="n">sentence</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span>
-                <span class="sa">f</span><span class="s1">&#39;&quot;B&quot;:</span><span class="si">{</span><span class="n">sentence</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span>
-                <span class="sa">f</span><span class="s1">&#39;&quot;C&quot;:</span><span class="si">{</span><span class="n">sentence</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span>
-                <span class="sa">f</span><span class="s2">&quot;Evaluate the score for students(</span><span class="se">\&quot;</span><span class="s2">A</span><span class="se">\&quot;</span><span class="s2">, </span><span class="se">\&quot;</span><span class="s2">B</span><span class="se">\&quot;</span><span class="s2">, </span><span class="se">\&quot;</span><span class="s2">C</span><span class="se">\&quot;</span><span class="s2">) with the above three aspects(&#39;</span><span class="si">{</span><span class="n">aspects</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&#39;, &#39;</span><span class="si">{</span><span class="n">aspects</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&#39;, &#39;</span><span class="si">{</span><span class="n">aspects</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">&#39;).&quot;</span>
-                <span class="s2">&quot;Your answer can only and just be returned in pure JSON format that can be serialized into dict format in Python.&quot;</span>
-            <span class="p">)</span>
-            <span class="n">gpt</span> <span class="o">=</span> <span class="n">chat_gpt</span><span class="p">(</span><span class="n">promt</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Answer:&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
-            <span class="n">load</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">gpt</span><span class="p">))</span>
-            <span class="n">tmp_load</span> <span class="o">=</span> <span class="p">{}</span>
-            <span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
-            <span class="c1"># 修正数据，可能格式不是想要的A：..而是Conciseness：‘A’</span>
-            <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">load</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-                    <span class="n">flag</span> <span class="o">=</span> <span class="kc">True</span>
-                    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-                        <span class="k">if</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">tmp_load</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-                            <span class="n">tmp_load</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
-                        <span class="n">tmp_load</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
-            <span class="k">if</span> <span class="n">flag</span><span class="p">:</span>
-                <span class="n">load</span> <span class="o">=</span> <span class="n">tmp_load</span>
-            <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">student</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">students</span><span class="p">):</span>
-                <span class="n">scores</span> <span class="o">=</span> <span class="p">[]</span>
-                <span class="n">rating</span> <span class="o">=</span> <span class="n">load</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
-                <span class="k">for</span> <span class="n">aspect</span> <span class="ow">in</span> <span class="n">aspects</span><span class="p">:</span>
-                    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">rating</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-                        <span class="k">if</span> <span class="n">k</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">aspect</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-                            <span class="n">scores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-                            <span class="k">break</span>
-                <span class="n">result_template</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;句</span><span class="si">{</span><span class="n">idx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s1">得分：流畅性[</span><span class="si">{</span><span class="n">scores</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">]；简洁性[</span><span class="si">{</span><span class="n">scores</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1">]；充分性[</span><span class="si">{</span><span class="n">scores</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s1">]</span><span class="se">\n</span><span class="s1">&#39;</span>
-                <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">students</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
-                    <span class="n">result_template</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
-                <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">result_template</span><span class="p">)</span>
-            <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
-            <span class="n">sentences</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;cur group at = </span><span class="si">{</span><span class="n">cnt</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">cnt</span> <span class="o">&gt;=</span> <span class="n">max_cnt</span><span class="p">:</span>
-                <span class="k">break</span>
-
-    <span class="n">fo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="n">fr</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;done, </span><span class="si">{</span><span class="n">cnt</span><span class="si">}</span><span class="s1"> sentences group is processed.&#39;</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="4">4.效果展示<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<p>大概每分钟调用三次OPENAI接口（因为OPENAI做了流量控制），速度还是有点慢，后面又给npy创建了一个账号，流控只针对单API Key，所以拆分文件之后跑了两个进程，速度减半，380+相当于花费：<code>380/(3*2)=60min</code>。这个场景适合很多需要低级人力的地方，可以借助免费额度来赚外快了。</p>
-<p><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312240007209.png" alt="image-20231224000743144" style="zoom: 50%;" /></p>
+<h2 id="bit-manipulation">Bit Manipulation｜位操作<a class="headerlink" href="#bit-manipulation" title="Permanent link">&para;</a></h2>
 
 
 
@@ -1685,10 +1203,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.annotate", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   </body>

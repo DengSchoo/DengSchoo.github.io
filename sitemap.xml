@@ -2,137 +2,182 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dengschoo.github.io/Logger/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Algorithm/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Algorithm/acwing-daily/acwing-daily/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Algorithm/lc-daily/lc-daiyly-problems/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Algorithm/lc-weekly/lc-344th-contest/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Algorithm/lc-weekly/lc-345th-contest/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Algorithm/lc-weekly/lc-376th/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Algorithm/lc-weekly/lc-377th/</loc>
-         <lastmod>2023-12-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/partI-basic-techs/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Algorithm/notes/template/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/01-introduction/</loc>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/02-time-complexity/</loc>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/03-sorting/</loc>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/04-data-structures/</loc>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/05-complete-search/</loc>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/06-greedy-algorithms/</loc>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/07-dynamic-programming/</loc>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/08-amortized-analusis/</loc>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/09-range-queries/</loc>
+         <lastmod>2023-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dengschoo.github.io/Logger/Algorithm/notes/part-one/10-bit-manipulation/</loc>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/English/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Java/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Java/java-core/java-core-basic/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Life/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Life/cooking/NoodlesMixedWithScallionOil/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Life/thinking/TheGainsAndLossesOfWorkingForNearlyAYear/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Life/travel/guoqing-1/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Life/travel/yun-nan/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Plans/day-plan/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Plans/week-plan/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Projects/help-gf-with-openAI/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Resources/tutorials/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Tools/IDE/IDEA/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Tools/MAC/commond/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/Tools/MAC/software/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dengschoo.github.io/Logger/blog/</loc>
-         <lastmod>2023-12-24</lastmod>
+         <lastmod>2023-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
