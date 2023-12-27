@@ -23,8 +23,12 @@
 > 看、喂海鸥、看昆明冬日景色、枫红林、落日
 
 美如画的枫叶林：不缩放，给个大图。这张无敌了，我直出的，色彩无敌。
+<figure markdown>
 
 ![DSC02938](https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172239218.JPG)
+<figcaption markdown>美丽的枫叶林</figcaption>
+</figure>
+
 
 滇池边享受游客投喂的海鸥：
 

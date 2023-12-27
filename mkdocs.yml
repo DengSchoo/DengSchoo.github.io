@@ -10,6 +10,9 @@ extra_css:
   - stylesheets/basic.css
   - stylesheets/admonition.css
   - https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css
+  - stylesheets/glightbox.min.css
+extra_javascript:
+  - javascripts/glightbox.min.js
 
 
 # [UI]
@@ -68,13 +71,20 @@ theme:
       accent: pink
 
     # Palette toggle for dark mode
+    # - media: "(prefers-color-scheme: dark)"
+    #   scheme: slate
+    #   toggle:
+    #     icon: material/weather-night
+    #     name: Switch to light mode
+    #   primary: blue grey
+    #   accent: pink
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
+      accent: indigo
       toggle:
-        icon: material/weather-night
-        name: Switch to light mode
-      primary: blue grey
-      accent: pink
+        icon: material/toggle-switch-off
+        name: Switch to system preference
 # edit_uri: edit/main/docs # 编辑按钮跳转的链接
 
 ## [top-right corner]
@@ -85,6 +95,9 @@ copyright: Copyright &copy; 2023 邓世豪 # 左下角的版权声明
 ## [bottom-right corner]
 
 extra:
+  analytics:
+    provider: google
+    property: G-WM3NPNX97Z
   social: # icons
     - icon: fontawesome/brands/github
       link: https://github.com/dengschoo/
@@ -103,10 +116,10 @@ nav:
     - Notes:
       - Algorithm/notes/part-one/01-introduction.md
   - English:
-    - article-trans:
+    - Articles Read:
       - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md
   - Life:
-    - Moment With GF:
+    - Moments With GF:
       - Life/travel/yun-nan.md
   - Project:
     - ML Related:
@@ -139,7 +152,26 @@ nav:
 #       page_read_time: false
 #       page_check_metadata: comments
 
-
+plugins:
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: true
+      caption_position: bottom
+  - git-revision-date-localized
+  - search
+  - glightbox
+  # - markdown-captions
+  # - git-authors
+  
 
 
 markdown_extensions:
