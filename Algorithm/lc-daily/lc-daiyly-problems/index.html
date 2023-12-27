@@ -95,14 +95,48 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/glightbox.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-WM3NPNX97Z"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-WM3NPNX97Z",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-WM3NPNX97Z",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script> <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -178,10 +212,10 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
       </label>
     
   
@@ -790,7 +824,7 @@
             
   
   <span class="md-ellipsis">
-    article-trans
+    Articles Read
   </span>
   
 
@@ -800,7 +834,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
-            article-trans
+            Articles Read
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -911,7 +945,7 @@
             
   
   <span class="md-ellipsis">
-    Moment With GF
+    Moments With GF
   </span>
   
 
@@ -921,7 +955,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
-            Moment With GF
+            Moments With GF
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1293,7 +1327,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1154"><a href="https://leetcode-cn.com/problems/day-of-the-year/">1154. 一年中的第几天</a><a class="headerlink" href="#1154" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211221111801710" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211221111801710.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211221111801710.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211221111801710" data-desc-position="bottom"><img alt="image-20211221111801710" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211221111801710.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1329,7 +1363,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="475"><a href="https://leetcode-cn.com/problems/heaters/">475. 供暖器</a><a class="headerlink" href="#475" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211220090248684" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211220090248684.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211220090248684.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211220090248684" data-desc-position="bottom"><img alt="image-20211220090248684" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211220090248684.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1371,12 +1405,12 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="397"><a href="https://leetcode-cn.com/problems/integer-replacement/">397. 整数替换</a><a class="headerlink" href="#397" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211119105902695" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211119105902695.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211119105902695.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211119105902695" data-desc-position="bottom"><img alt="image-20211119105902695" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211119105902695.png" /></a></p>
 <blockquote>
 <ol>
 <li>递归</li>
 </ol>
-<p><img alt="image-20211119110012107" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211119110012107.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211119110012107.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211119110012107" data-desc-position="bottom"><img alt="image-20211119110012107" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211119110012107.png" /></a></p>
 </blockquote>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -1453,10 +1487,10 @@
 </ul>
 </li>
 </ul>
-<p><img alt="image-20211119110754868" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211119110754868.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211119110754868.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211119110754868" data-desc-position="bottom"><img alt="image-20211119110754868" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211119110754868.png" /></a></p>
 </blockquote>
 <h2 id="563"><a href="https://leetcode-cn.com/problems/binary-tree-tilt/">563. 二叉树的坡度</a><a class="headerlink" href="#563" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211118103608021" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211118103608021.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211118103608021.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211118103608021" data-desc-position="bottom"><img alt="image-20211118103608021" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211118103608021.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1511,7 +1545,7 @@
 </code></pre></div></td></tr></table></div>
 <h2 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h2 id="318"><a href="https://leetcode-cn.com/problems/maximum-product-of-word-lengths/">318. 最大单词长度乘积</a><a class="headerlink" href="#318" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211117075852670" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211117075852670.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211117075852670.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211117075852670" data-desc-position="bottom"><img alt="image-20211117075852670" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211117075852670.png" /></a></p>
 <blockquote>
 <p>先按照长度降序排序 遍历统计 如何合适直接break即可</p>
 </blockquote>
@@ -1637,9 +1671,9 @@
 <li>没有优化的直接遍历</li>
 </ol>
 </blockquote>
-<p><img alt="image-20211117080303906" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211117080303906.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211117080303906.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211117080303906" data-desc-position="bottom"><img alt="image-20211117080303906" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211117080303906.png" /></a></p>
 <h2 id="495"><a href="https://leetcode-cn.com/problems/teemo-attacking/">495. 提莫攻击</a><a class="headerlink" href="#495" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211110224904444" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211110224904444.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211110224904444.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211110224904444" data-desc-position="bottom"><img alt="image-20211110224904444" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211110224904444.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1663,7 +1697,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="299"><a href="https://leetcode-cn.com/problems/bulls-and-cows/">299. 猜数字游戏</a><a class="headerlink" href="#299" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211108143918068" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211108143918068.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211108143918068.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211108143918068" data-desc-position="bottom"><img alt="image-20211108143918068" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211108143918068.png" /></a></p>
 <blockquote>
 <p>字符串模拟</p>
 </blockquote>
@@ -1766,7 +1800,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1218"><a href="https://leetcode-cn.com/problems/longest-arithmetic-subsequence-of-given-difference/">1218. 最长定差子序列</a><a class="headerlink" href="#1218" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211105162912743" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211105162912743.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211105162912743.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211105162912743" data-desc-position="bottom"><img alt="image-20211105162912743" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211105162912743.png" /></a></p>
 <blockquote>
 <p>线性DP：</p>
 <p>dp[arr[i]]表示以arr[i]结尾的子序列的最大长度</p>
@@ -1797,7 +1831,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="869-2-20211028"><a href="https://leetcode-cn.com/problems/reordered-power-of-2/">869. 重新排序得到 2 的幂</a>（2021/10/28）<a class="headerlink" href="#869-2-20211028" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211028141610834" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211028141610834.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211028141610834.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211028141610834" data-desc-position="bottom"><img alt="image-20211028141610834" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211028141610834.png" /></a></p>
 <blockquote>
 <p><code>string cnt(10, 0);</code></p>
 <p><code>c++ 的lamda表达式</code></p>
@@ -1851,7 +1885,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="496-i20211026"><a href="https://leetcode-cn.com/problems/next-greater-element-i/">496. 下一个更大元素 I</a>（2021/10/26）<a class="headerlink" href="#496-i20211026" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211026203228478" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211026203228478.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211026203228478.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211026203228478" data-desc-position="bottom"><img alt="image-20211026203228478" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211026203228478.png" /></a></p>
 <blockquote>
 <p>单调栈：从后往前按照底到顶递减的顺序存放</p>
 </blockquote>
@@ -1896,7 +1930,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="240-ii20211025"><a href="https://leetcode-cn.com/problems/search-a-2d-matrix-ii/">240. 搜索二维矩阵 II</a>(2021/10/25)<a class="headerlink" href="#240-ii20211025" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211025112722610" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211025112722610.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211025112722610.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211025112722610" data-desc-position="bottom"><img alt="image-20211025112722610" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211025112722610.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1936,7 +1970,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="5908"><a href="https://leetcode-cn.com/problems/count-nodes-with-the-highest-score/">5908. 统计最高分的节点数目</a><a class="headerlink" href="#5908" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211024191404049" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211024191404049.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211024191404049.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211024191404049" data-desc-position="bottom"><img alt="image-20211024191404049" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211024191404049.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -2024,7 +2058,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="638"><a href="https://leetcode-cn.com/problems/shopping-offers/">638. 大礼包</a><a class="headerlink" href="#638" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211024104720750" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211024104720750.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211024104720750.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211024104720750" data-desc-position="bottom"><img alt="image-20211024104720750" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211024104720750.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -2106,7 +2140,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="492"><a href="https://leetcode-cn.com/problems/construct-the-rectangle/">492. 构造矩形</a><a class="headerlink" href="#492" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211023114741817" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211023114741817.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211023114741817.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211023114741817" data-desc-position="bottom"><img alt="image-20211023114741817" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211023114741817.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -2128,7 +2162,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="229-ii"><a href="https://leetcode-cn.com/problems/majority-element-ii/">229. 求众数 II</a><a class="headerlink" href="#229-ii" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211022111120209" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211022111120209.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211022111120209.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211022111120209" data-desc-position="bottom"><img alt="image-20211022111120209" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211022111120209.png" /></a></p>
 <blockquote>
 <p>摩尔投票：解决的问题是如何在任意多的候选人中，选出票数超过一半的那个人。注意，是超出一半票数的那个人。</p>
 <p><a href="https://leetcode-cn.com/problems/majority-element-ii/solution/liang-fu-dong-hua-yan-shi-mo-er-tou-piao-fa-zui-zh/">两幅动画演示摩尔投票法，最直观的理解方式 - 求众数 II - 力扣（LeetCode） (leetcode-cn.com)</a></p>
@@ -2242,7 +2276,7 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="66"><a href="https://leetcode-cn.com/problems/plus-one/">66. 加一</a><a class="headerlink" href="#66" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211021183946597" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211021183946597.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211021183946597.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211021183946597" data-desc-position="bottom"><img alt="image-20211021183946597" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211021183946597.png" /></a></p>
 <blockquote>
 <p>找到第一个非9的数字</p>
 </blockquote>
@@ -2323,7 +2357,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="453"><a href="https://leetcode-cn.com/problems/minimum-moves-to-equal-array-elements/">453. 最小操作次数使数组元素相等</a><a class="headerlink" href="#453" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211020163053051" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211020163053051.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211020163053051.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211020163053051" data-desc-position="bottom"><img alt="image-20211020163053051" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211020163053051.png" /></a></p>
 <blockquote>
 <p>对 n - 1做加一操作 相当于对某个数做-1操作，所以问题转化为求将其它数转为最小值的次数</p>
 </blockquote>
@@ -2350,7 +2384,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="211-"><a href="https://leetcode-cn.com/problems/design-add-and-search-words-data-structure/">211. 添加与搜索单词 - 数据结构设计</a><a class="headerlink" href="#211-" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211020162938835" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211020162938835.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211020162938835.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211020162938835" data-desc-position="bottom"><img alt="image-20211020162938835" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211020162938835.png" /></a></p>
 <blockquote>
 <p>桶的思想：将长度相同的word存放起来。</p>
 </blockquote>
@@ -2449,7 +2483,7 @@
 <span class="cm"> */</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="476"><a href="https://leetcode-cn.com/problems/number-complement/">476. 数字的补数</a><a class="headerlink" href="#476" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211018182035405" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211018182035405.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211018182035405.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211018182035405" data-desc-position="bottom"><img alt="image-20211018182035405" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211018182035405.png" /></a></p>
 <blockquote>
 <p>101 + 010 = 111</p>
 </blockquote>
@@ -2480,7 +2514,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="230-k"><a href="https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/">230. 二叉搜索树中第K小的元素</a><a class="headerlink" href="#230-k" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211017094736049" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211017094736049.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211017094736049.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211017094736049" data-desc-position="bottom"><img alt="image-20211017094736049" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211017094736049.png" /></a></p>
 <blockquote>
 <p>方法一：前序遍历+小顶堆</p>
 <p>方法二：中序遍历得到有序序列 返回nums[k-1]即可</p>
@@ -2590,7 +2624,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="38"><a href="https://leetcode-cn.com/problems/count-and-say/">38. 外观数列</a><a class="headerlink" href="#38" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211015102206907" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211015102206907.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211015102206907.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211015102206907" data-desc-position="bottom"><img alt="image-20211015102206907" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/image-20211015102206907.png" /></a></p>
 <blockquote>
 <p>方法一：遍历生成 每次统计上一个字符串的连续数字个数<code>(3)1(2)2(1)3(3)4(1)5(3)6</code>=<code>312213341536</code></p>
 <p>方法二：打表，因为数字范围只有30个</p>
@@ -2704,7 +2738,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="offer-ii-069"><a href="https://leetcode-cn.com/problems/B1IidL/">剑指 Offer II 069. 山峰数组的顶部</a><a class="headerlink" href="#offer-ii-069" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211014105220369" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211014105220369.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211014105220369.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211014105220369" data-desc-position="bottom"><img alt="image-20211014105220369" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211014105220369.png" /></a></p>
 <blockquote>
 <p>二分处理</p>
 </blockquote>
@@ -2747,7 +2781,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="29"><a href="https://leetcode-cn.com/problems/divide-two-integers/">29. 两数相除</a><a class="headerlink" href="#29" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211013112341810" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211013112341810.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211013112341810.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211013112341810" data-desc-position="bottom"><img alt="image-20211013112341810" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211013112341810.png" /></a></p>
 <blockquote>
 <p>60 / 8 = (60 - 32) / 8 + 4 = (60 - 32 -16) / 8 + 4 + 2 = (60 - 32 -16 -8) + 4 + 2 + 1 = 7</p>
 </blockquote>
@@ -2816,7 +2850,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="412-fizz-buzz"><a href="https://leetcode-cn.com/problems/fizz-buzz/">412. Fizz Buzz</a><a class="headerlink" href="#412-fizz-buzz" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211013102311784" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211013102311784.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211013102311784.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211013102311784" data-desc-position="bottom"><img alt="image-20211013102311784" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211013102311784.png" /></a></p>
 <blockquote>
 <p>模拟：<code>emplace_back()</code>在末尾添加元素，C++11添加 相比push_back()没有移动复制过程，直接在末尾创建该元素，效率更高。</p>
 </blockquote>
@@ -2861,7 +2895,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="273"><a href="https://leetcode-cn.com/problems/integer-to-english-words/">273. 整数转换英文表示</a><a class="headerlink" href="#273" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211011102254505" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211011102254505.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211011102254505.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211011102254505" data-desc-position="bottom"><img alt="image-20211011102254505" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211011102254505.png" /></a></p>
 <blockquote>
 <p>非负整数num的最大值为2^31 - 1，因此最多有10位数，将整数按照3位一组划分，将每一组的英文表示拼接之后即可得到整数num的英文表示。</p>
 <p>每一组最多3位数，可以使用递归的方式得到每一组的英文表示，根据数字所在范围，具体做法如下：</p>
@@ -2960,7 +2994,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="441"><a href="https://leetcode-cn.com/problems/arranging-coins/">441. 排列硬币</a><a class="headerlink" href="#441" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211010094320650" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211010094320650.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211010094320650.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211010094320650" data-desc-position="bottom"><img alt="image-20211010094320650" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211010094320650.png" /></a></p>
 <blockquote>
 <p>数学推导k的范围</p>
 </blockquote>
@@ -2991,7 +3025,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="187-dna"><a href="https://leetcode-cn.com/problems/repeated-dna-sequences/">187. 重复的DNA序列</a><a class="headerlink" href="#187-dna" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211008092755429" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211008092755429.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211008092755429.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211008092755429" data-desc-position="bottom"><img alt="image-20211008092755429" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211008092755429.png" /></a></p>
 <blockquote>
 <ol>
 <li>Hash表O(NL)</li>
@@ -3085,7 +3119,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="434"><a href="https://leetcode-cn.com/problems/number-of-segments-in-a-string/">434. 字符串中的单词数</a><a class="headerlink" href="#434" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211007162819370" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211007162819370.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211007162819370.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211007162819370" data-desc-position="bottom"><img alt="image-20211007162819370" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211007162819370.png" /></a></p>
 <blockquote>
 <p>简单模拟</p>
 </blockquote>
@@ -3120,7 +3154,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="414"><a href="https://leetcode-cn.com/problems/third-maximum-number/">414. 第三大的数</a><a class="headerlink" href="#414" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211006101926639" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211006101926639.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211006101926639.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211006101926639" data-desc-position="bottom"><img alt="image-20211006101926639" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211006101926639.png" /></a></p>
 <blockquote>
 <ol>
 <li>排序取第三大数</li>
@@ -3282,7 +3316,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="482"><a href="https://leetcode-cn.com/problems/license-key-formatting/">482. 密钥格式化</a><a class="headerlink" href="#482" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211004103030691" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211004103030691.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211004103030691.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211004103030691" data-desc-position="bottom"><img alt="image-20211004103030691" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211004103030691.png" /></a></p>
 <blockquote>
 <p>字符串模拟</p>
 </blockquote>
@@ -3341,7 +3375,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="166"><a href="https://leetcode-cn.com/problems/fraction-to-recurring-decimal/">166. 分数到小数</a><a class="headerlink" href="#166" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211003104418099" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211003104418099.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211003104418099.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211003104418099" data-desc-position="bottom"><img alt="image-20211003104418099" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211003104418099.png" /></a></p>
 <blockquote>
 <p>用map存一下当前被除数对应在结果小数index，如果不为空说明有循环节，那么就做字符串做裁剪。</p>
 <p>1、数字正负处理：都转为正数</p>
@@ -3439,7 +3473,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="405"><a href="https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/">405. 数字转换为十六进制数</a><a class="headerlink" href="#405" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211002101423155" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211002101423155.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211002101423155.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211002101423155" data-desc-position="bottom"><img alt="image-20211002101423155" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211002101423155.png" /></a></p>
 <blockquote>
 <p>四位一位做运算</p>
 </blockquote>
@@ -3478,7 +3512,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="223"><a href="https://leetcode-cn.com/problems/rectangle-area/">223. 矩形面积</a><a class="headerlink" href="#223" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211002100958493" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211002100958493.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211002100958493.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211002100958493" data-desc-position="bottom"><img alt="image-20211002100958493" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211002100958493.png" /></a></p>
 <blockquote>
 <p>容斥原理 + x，y方向投影算面积</p>
 </blockquote>
@@ -3501,7 +3535,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="326-3"><a href="https://leetcode-cn.com/problems/power-of-three/">326. 3的幂</a><a class="headerlink" href="#326-3" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210923101748080" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20210923101748080.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20210923101748080.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210923101748080" data-desc-position="bottom"><img alt="image-20210923101748080" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20210923101748080.png" /></a></p>
 <blockquote>
 <p>试除法</p>
 </blockquote>
@@ -3539,7 +3573,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="58"><a href="https://leetcode-cn.com/problems/length-of-last-word/">58. 最后一个单词的长度</a><a class="headerlink" href="#58" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210922200204865" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20210922200204865.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20210922200204865.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210922200204865" data-desc-position="bottom"><img alt="image-20210922200204865" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20210922200204865.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -3561,7 +3595,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="725"><a href="https://leetcode-cn.com/problems/split-linked-list-in-parts/">725. 分隔链表</a><a class="headerlink" href="#725" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210922195950390" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20210922195950390.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20210922195950390.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210922195950390" data-desc-position="bottom"><img alt="image-20210922195950390" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20210922195950390.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -3653,7 +3687,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="524"><a href="https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/">524. 通过删除字母匹配到字典里最长单词</a><a class="headerlink" href="#524" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210914130247376" src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20210914130247376.png" /></p>
+<p><a class="glightbox" href="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20210914130247376.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210914130247376" data-desc-position="bottom"><img alt="image-20210914130247376" src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20210914130247376.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -3803,7 +3837,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="678"><a href="https://leetcode-cn.com/problems/valid-parenthesis-string/">678. 有效的括号字符串</a><a class="headerlink" href="#678" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210912093902698" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210912093902698.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210912093902698.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210912093902698" data-desc-position="bottom"><img alt="image-20210912093902698" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210912093902698.png" /></a></p>
 <blockquote>
 <p>双向扫描：</p>
 <ul>
@@ -3839,7 +3873,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="600-1"><a href="https://leetcode-cn.com/problems/non-negative-integers-without-consecutive-ones/">600. 不含连续1的非负整数</a><a class="headerlink" href="#600-1" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210912093459920" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210912093459920.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210912093459920.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210912093459920" data-desc-position="bottom"><img alt="image-20210912093459920" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210912093459920.png" /></a></p>
 <blockquote>
 <p>暴力会超时</p>
 <p>可以去构造这样的一个非负整数</p>
@@ -3963,7 +3997,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1221"><a href="https://leetcode-cn.com/problems/split-a-string-in-balanced-strings/">1221. 分割平衡字符串</a><a class="headerlink" href="#1221" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210907160830104" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210907160830104.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210907160830104.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210907160830104" data-desc-position="bottom"><img alt="image-20210907160830104" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210907160830104.png" /></a></p>
 <blockquote>
 <p>对任一平衡字符串中的最短平衡前缀做切分 切分后的得到两个平衡前缀。</p>
 </blockquote>
@@ -3994,7 +4028,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="704"><a href="https://leetcode-cn.com/problems/binary-search/">704. 二分查找</a><a class="headerlink" href="#704" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210906093051647" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210906093051647.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210906093051647.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210906093051647" data-desc-position="bottom"><img alt="image-20210906093051647" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210906093051647.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -4032,7 +4066,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="470-rand7-rand10"><a href="https://leetcode-cn.com/problems/implement-rand10-using-rand7/">470. 用 Rand7() 实现 Rand10()</a><a class="headerlink" href="#470-rand7-rand10" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210905093555464" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210905093555464.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210905093555464.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210905093555464" data-desc-position="bottom"><img alt="image-20210905093555464" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210905093555464.png" /></a></p>
 <blockquote>
 <p>rand10 = rand5  * 2 + (rand2) * ( -1)</p>
 </blockquote>
@@ -4085,7 +4119,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="offer-22-k"><a href="https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/">剑指 Offer 22. 链表中倒数第k个节点</a><a class="headerlink" href="#offer-22-k" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210902203038435" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210902203038435.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210902203038435.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210902203038435" data-desc-position="bottom"><img alt="image-20210902203038435" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210902203038435.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -4135,7 +4169,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1109"><a href="https://leetcode-cn.com/problems/corporate-flight-bookings/">1109. 航班预订统计</a><a class="headerlink" href="#1109" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210901215522032" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210901215522032.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210901215522032.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210901215522032" data-desc-position="bottom"><img alt="image-20210901215522032" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210901215522032.png" /></a></p>
 <blockquote>
 <p>差分：差分数组对应的概念是前缀和数组，对于数组 [1,2,2,4][1,2,2,4]，其差分数组为 [1,1,0,2][1,1,0,2]，差分数组的第 ii 个数即为原数组的第 i-1i−1 个元素和第 ii 个元素的差值，也就是说我们对差分数组求前缀和即可得到原数组。</p>
 <p>差分数组的性质是，当我们希望对原数组的某一个区间<code>[l,r][l,r]</code>施加一个增量<code>inc</code> 时，差分数组 d 对应的改变是：<code>d[l][l]</code>增加 <code>inc</code>，<code>d[r+1][r+1]</code> 减少 <code>inc</code></p>
@@ -4144,7 +4178,7 @@
 <p>遍历（整理）counter[] 数组，得到每站总人数： 每站的人数为前一站人数加上当前人数变化 counters[i] += counters[i - 1]</p>
 </blockquote>
 <h2 id="165"><a href="https://leetcode-cn.com/problems/compare-version-numbers/">165. 比较版本号</a><a class="headerlink" href="#165" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210901214647025" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210901214647025.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210901214647025.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210901214647025" data-desc-position="bottom"><img alt="image-20210901214647025" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210901214647025.png" /></a></p>
 <blockquote>
 <p>切分字符串 --- java版本</p>
 <p>按照.切分然后比较每一节的字符串的int值</p>
@@ -4243,7 +4277,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1646"><a href="https://leetcode-cn.com/problems/get-maximum-in-generated-array/">1646. 获取生成数组中的最大值</a><a class="headerlink" href="#1646" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210823090236406" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210823090236406.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210823090236406.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210823090236406" data-desc-position="bottom"><img alt="image-20210823090236406" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210823090236406.png" /></a></p>
 <blockquote>
 <p>简单模拟</p>
 <p><code>max_element(v.begin(), v.end())</code></p>
@@ -4277,7 +4311,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="576"><a href="https://leetcode-cn.com/problems/out-of-boundary-paths/">576. 出界的路径数</a><a class="headerlink" href="#576" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210815154054540" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210815154054540.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210815154054540.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210815154054540" data-desc-position="bottom"><img alt="image-20210815154054540" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210815154054540.png" /></a></p>
 <blockquote>
 <p>深搜一定会超时，超时的原因是因为重复计算了 所以需要保留状态：坐标+剩下的步数即可唯一确定是相同状态。</p>
 </blockquote>
@@ -4322,7 +4356,7 @@
 \
 </code></pre></div></td></tr></table></div>
 <h2 id="1583"><a href="https://leetcode-cn.com/problems/count-unhappy-friends/">1583. 统计不开心的朋友</a><a class="headerlink" href="#1583" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210814102901975" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210814102901975.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210814102901975.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210814102901975" data-desc-position="bottom"><img alt="image-20210814102901975" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210814102901975.png" /></a></p>
 <blockquote>
 <p>map预处理 + set去重</p>
 </blockquote>
@@ -4403,7 +4437,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1337-k"><a href="https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/">1337. 矩阵中战斗力最弱的 K 行</a><a class="headerlink" href="#1337-k" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210801173004417" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210801173004417.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210801173004417.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210801173004417" data-desc-position="bottom"><img alt="image-20210801173004417" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210801173004417.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -4456,7 +4490,7 @@
 <p>pair用法：<code>pair&lt;int, int&gt; p(V1, V2)</code></p>
 </blockquote>
 <h2 id="374"><a href="https://leetcode-cn.com/problems/guess-number-higher-or-lower/">374. 猜数字大小</a><a class="headerlink" href="#374" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210614182933339" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210614182933339.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210614182933339.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210614182933339" data-desc-position="bottom"><img alt="image-20210614182933339" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210614182933339.png" /></a></p>
 <blockquote>
 <p>二分查找</p>
 </blockquote>
@@ -4513,7 +4547,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="203"><a href="https://leetcode-cn.com/problems/remove-linked-list-elements/">203. 移除链表元素</a><a class="headerlink" href="#203" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210605091458247" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210605091458247.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210605091458247.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210605091458247" data-desc-position="bottom"><img alt="image-20210605091458247" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210605091458247.png" /></a></p>
 <blockquote>
 <p>双指针 预处理头部</p>
 </blockquote>
@@ -4594,11 +4628,11 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="160"><a href="https://leetcode-cn.com/problems/intersection-of-two-linked-lists/">160. 相交链表</a><a class="headerlink" href="#160" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210604091537470" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210604091537470.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210604091537470.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210604091537470" data-desc-position="bottom"><img alt="image-20210604091537470" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210604091537470.png" /></a></p>
 <blockquote>
 <p>哈希集合存放一条链路完整路径，检查第二条链路是否有重复结点</p>
 <p>双指针：思想如果两个链表长度不同，而指针的步调是一致的，那么在一次交换遍历后，就会相遇。</p>
-<p><img alt="image-20210604091604685" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210604091604685.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210604091604685.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210604091604685" data-desc-position="bottom"><img alt="image-20210604091604685" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210604091604685.png" /></a></p>
 <p>证明：A的长度为<code>lena</code>， B的长度为<code>lenb</code>。假设在第一次遍历之后A首先达到<code>nullptr</code>,后从B开始继续遍历，当B结束之后，A在B链路上多走的步数为lenb - lena为1(上图为1)，此时二者同步位置，即从此时开始二者后续遍历的元素个数就相同了，故再按照相同的步调走的话，如果存在A = B，就说明有相交的交点。</p>
 </blockquote>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -4668,7 +4702,7 @@
 <h2 id="525"><a href="https://leetcode-cn.com/problems/contiguous-array/">525. 连续数组</a>、<a class="headerlink" href="#525" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>前缀和+哈希+数学推导</p>
-<p><img alt="image-20210603075345587" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210603075345587.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210603075345587.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210603075345587" data-desc-position="bottom"><img alt="image-20210603075345587" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210603075345587.png" /></a></p>
 </blockquote>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -4833,7 +4867,7 @@
 <p>位运算</p>
 <p>数学题</p>
 <p>下标从0位开始，偶数位为4的幂，1010 = a</p>
-<p><img alt="image-20210531211812809" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210531211812809.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210531211812809.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210531211812809" data-desc-position="bottom"><img alt="image-20210531211812809" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210531211812809.png" /></a></p>
 </blockquote>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -4846,7 +4880,7 @@
 <p>内置函数</p>
 <p>位运算</p>
 </blockquote>
-<p><img alt="image-20210527080618332" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210527080618332.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210527080618332.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210527080618332" data-desc-position="bottom"><img alt="image-20210527080618332" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210527080618332.png" /></a></p>
 <blockquote>
 <p>go</p>
 </blockquote>
@@ -4897,7 +4931,7 @@
 <blockquote>
 <p>栈进行模拟</p>
 </blockquote>
-<p><img alt="image-20210526080735421" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210526080735421.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210526080735421.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210526080735421" data-desc-position="bottom"><img alt="image-20210526080735421" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210526080735421.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -4941,7 +4975,7 @@
 <h2 id="664"><a href="https://leetcode-cn.com/problems/strange-printer/">664. 奇怪的打印机</a><a class="headerlink" href="#664" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>C++区间dp</p>
-<p><img alt="image-20210524084531147" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210524084531147.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210524084531147.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210524084531147" data-desc-position="bottom"><img alt="image-20210524084531147" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210524084531147.png" /></a></p>
 </blockquote>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -4992,7 +5026,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1707"><a href="https://leetcode-cn.com/problems/maximum-xor-with-an-element-from-array/">1707. 与数组中元素的最大异或值</a><a class="headerlink" href="#1707" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210523092437245" src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20210523092437245.png" /></p>
+<p><a class="glightbox" href="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20210523092437245.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210523092437245" data-desc-position="bottom"><img alt="image-20210523092437245" src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20210523092437245.png" /></a></p>
 <blockquote>
 <p>超时做法：暴力+剪枝</p>
 </blockquote>
@@ -5096,7 +5130,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1035"><a href="https://leetcode-cn.com/problems/uncrossed-lines/">1035. 不相交的线</a><a class="headerlink" href="#1035" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210521083529102" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210521083529102.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210521083529102.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210521083529102" data-desc-position="bottom"><img alt="image-20210521083529102" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210521083529102.png" /></a></p>
 <blockquote>
 <p>lcs最长公共子序列</p>
 </blockquote>
@@ -5237,7 +5271,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1442"><a href="https://leetcode-cn.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/">1442. 形成两个异或相等数组的三元组数目</a><a class="headerlink" href="#1442" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210518221543980" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518221543980.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518221543980.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210518221543980" data-desc-position="bottom"><img alt="image-20210518221543980" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518221543980.png" /></a></p>
 <blockquote>
 <p>n ^ 3做法：暴力枚举三个点，前缀和</p>
 </blockquote>
@@ -5293,7 +5327,7 @@
 </code></pre></div></td></tr></table></div>
 <blockquote>
 <p>n^2做法：前缀和+问题转换</p>
-<p><img alt="image-20210518222339213" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518222339213.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518222339213.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210518222339213" data-desc-position="bottom"><img alt="image-20210518222339213" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518222339213.png" /></a></p>
 </blockquote>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -5349,13 +5383,13 @@
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
-<p><img alt="image-20210518222445318" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518222445318.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518222445318.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210518222445318" data-desc-position="bottom"><img alt="image-20210518222445318" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518222445318.png" /></a></p>
 <h2 id="993">993.二叉树的堂兄弟结点<a class="headerlink" href="#993" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>BFS。</p>
 <p>如果两个结点在每一层，那么在每一层for循环向队列添加元素的时候，就必然会在同一个for循环中被添加到队列中。</p>
 </blockquote>
-<p><img alt="image-20210517074445863" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210517074445863.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210517074445863.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210517074445863" data-desc-position="bottom"><img alt="image-20210517074445863" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210517074445863.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -5498,7 +5532,7 @@
 <li>因为是从后往前推，所有对于IX中的I会计算两次，即需要将IX9映射为8</li>
 </ul>
 </blockquote>
-<p><img alt="image-20210515091540971" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210515091540971.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210515091540971.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210515091540971" data-desc-position="bottom"><img alt="image-20210515091540971" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210515091540971.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -5529,7 +5563,7 @@
 <blockquote>
 <p>建立映射关系，然后按对应数字从大到小依次处理字符串和减去对应的值。</p>
 </blockquote>
-<p><img alt="image-20210514090043335" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210514090043335.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210514090043335.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210514090043335" data-desc-position="bottom"><img alt="image-20210514090043335" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210514090043335.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -5601,7 +5635,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1734">1734.解码异或后的排列<a class="headerlink" href="#1734" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210511151045068" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210511151045068.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210511151045068.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210511151045068" data-desc-position="bottom"><img alt="image-20210511151045068" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210511151045068.png" /></a></p>
 <blockquote>
 <p>数学思维</p>
 </blockquote>
@@ -5719,7 +5753,7 @@
 <blockquote>
 <p>二分+贪心</p>
 </blockquote>
-<p><img alt="image-20210509083648388" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210509083648388.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210509083648388.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210509083648388" data-desc-position="bottom"><img alt="image-20210509083648388" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210509083648388.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -5890,7 +5924,7 @@
 <blockquote>
 <p>简答模拟</p>
 </blockquote>
-<p><img alt="image-20210507085330656" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210507085330656.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210507085330656.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210507085330656" data-desc-position="bottom"><img alt="image-20210507085330656" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210507085330656.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -5915,7 +5949,7 @@
 <blockquote>
 <p>简单数论</p>
 </blockquote>
-<p><img alt="image-20210506195533573" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210506195533573.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210506195533573.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210506195533573" data-desc-position="bottom"><img alt="image-20210506195533573" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210506195533573.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -5939,7 +5973,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="740">740. 删除并获得点数<a class="headerlink" href="#740" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210505100653314" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210505100653314.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210505100653314.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210505100653314" data-desc-position="bottom"><img alt="image-20210505100653314" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210505100653314.png" /></a></p>
 <blockquote>
 <p>动态规划</p>
 </blockquote>
@@ -5981,7 +6015,7 @@
 <p>对于每一条垂线，穿过的砖块和穿过的间隙相加结果都是总高度 是个定值</p>
 <p>所以只需要找出最多的间隙那个 就找到了高度减最多的间隙就找到了穿过的最少砖数。</p>
 </blockquote>
-<p><img alt="image-20210502082716828" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210502082716828.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210502082716828.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210502082716828" data-desc-position="bottom"><img alt="image-20210502082716828" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210502082716828.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -6021,7 +6055,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="690">690. 员工的重要性<a class="headerlink" href="#690" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210502083118041" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210502083118041.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210502083118041.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210502083118041" data-desc-position="bottom"><img alt="image-20210502083118041" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210502083118041.png" /></a></p>
 <blockquote>
 <p>bfs</p>
 </blockquote>
@@ -6110,7 +6144,7 @@
 <p>解法1：</p>
 <p>DFS + 记忆化（记忆化搜索）</p>
 </blockquote>
-<p><img alt="image-20210502083209208" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210502083209208.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210502083209208.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210502083209208" data-desc-position="bottom"><img alt="image-20210502083209208" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210502083209208.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -6567,7 +6601,7 @@
 <p><code>dp[i][j]</code>表示长度为i的 构成总和为j的方案数</p>
 <p><code>dp[0][0] = 1</code></p>
 </blockquote>
-<p><img alt="image-20210424135158154" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210424135158154.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210424135158154.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210424135158154" data-desc-position="bottom"><img alt="image-20210424135158154" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210424135158154.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -6736,7 +6770,7 @@
 <blockquote>
 <p>原地删除无序数组的特定项</p>
 </blockquote>
-<p><img alt="image-20210419084355052" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210419084355052.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210419084355052.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210419084355052" data-desc-position="bottom"><img alt="image-20210419084355052" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210419084355052.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -6797,7 +6831,7 @@
 <blockquote>
 <p>滑动窗口 + set维护窗口内的状态</p>
 </blockquote>
-<p><img alt="image-20210417094515733" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210417094515733.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210417094515733.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210417094515733" data-desc-position="bottom"><img alt="image-20210417094515733" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210417094515733.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -6836,7 +6870,7 @@
 <li>不打劫第一家</li>
 </ol>
 </blockquote>
-<p><img alt="image-20210417094551127" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210417094551127.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210417094551127.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210417094551127" data-desc-position="bottom"><img alt="image-20210417094551127" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210417094551127.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -6977,7 +7011,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="783">783.二叉树节点的最小距离<a class="headerlink" href="#783" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210413190558084" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210413190558084.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210413190558084.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210413190558084" data-desc-position="bottom"><img alt="image-20210413190558084" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210413190558084.png" /></a></p>
 <blockquote>
 <p>二叉树中序遍历得到有序数组 最小的距离为相邻的两个值的差值最小</p>
 </blockquote>
@@ -7045,7 +7079,7 @@
 <blockquote>
 <p>小顶堆: 堆顶为x , 下一个点就是 2x, 3x, 5x</p>
 </blockquote>
-<p><img alt="image-20210411084001360" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411084001360.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411084001360.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210411084001360" data-desc-position="bottom"><img alt="image-20210411084001360" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411084001360.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -7095,7 +7129,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="263">263. 丑数<a class="headerlink" href="#263" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210410142416824" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210410142416824.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210410142416824.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210410142416824" data-desc-position="bottom"><img alt="image-20210410142416824" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210410142416824.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -7193,7 +7227,7 @@
 <blockquote>
 <p>双指针（快慢指针），cur表示当前遍历到的指针，fill表示需要填的指针，最后数组的长度就是填入了多少个数。</p>
 </blockquote>
-<p><img alt="image-20210406083010537" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210406083010537.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210406083010537.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210406083010537" data-desc-position="bottom"><img alt="image-20210406083010537" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210406083010537.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -7240,7 +7274,7 @@
 <blockquote>
 <p>2021-04-05</p>
 </blockquote>
-<p><img alt="image-20210405081919970" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405081919970.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405081919970.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210405081919970" data-desc-position="bottom"><img alt="image-20210405081919970" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405081919970.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -7295,12 +7329,12 @@
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
-<p><img alt="image-20210405081948299" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405081948299.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405081948299.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210405081948299" data-desc-position="bottom"><img alt="image-20210405081948299" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405081948299.png" /></a></p>
 <h2 id="781">781. 森林里面的兔子<a class="headerlink" href="#781" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>2021-04-04</p>
 </blockquote>
-<p><img alt="image-20210404085712859" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210404085712859.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210404085712859.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210404085712859" data-desc-position="bottom"><img alt="image-20210404085712859" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210404085712859.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -7333,7 +7367,7 @@
 <p>因此，将 \textit{answers}answers 中值相同的元素分为一组，对于每一组，计算出兔子的最少数量，然后将所有组的计算结果累加，就是最终的答案。</p>
 <p>例如，现在有 13 只兔子回答 5。假设其中有一只红色的兔子，那么森林中必然有 6 只红兔子。再假设其中还有一只蓝色的兔子，同样的道理森林中必然有 66 只蓝兔子。为了最小化可能的兔子数量，我们假设这 12 只兔子都在这 13 只兔子中。那么还有一只额外的兔子回答 5，这只兔子只能是其他的颜色，这一颜色的兔子也有 6 只。因此这种情况下最少会有 18 只兔子。</p>
 <p>一般地，如果有 x 只兔子都回答y，则至少有 <mark>x / (y + 1)</mark> 种不同的颜色，且每种颜色有 <mark>y+1</mark> 只兔子，因此兔子数至少为</p>
-<p><img alt="image-20210404090415325" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210404090415325.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210404090415325.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210404090415325" data-desc-position="bottom"><img alt="image-20210404090415325" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210404090415325.png" /></a></p>
 <p>我们可以用哈希表统计 answers 中各个元素的出现次数，对每个元素套用上述公式计算，并将计算结果累加，即为最终答案。</p>
 <blockquote>
 <p>向上取整： (x + y) / (y + 1)</p>
@@ -7344,7 +7378,7 @@
 <p>2021-04-05</p>
 <p><a href="https://leetcode-cn.com/problems/longest-common-subsequence/">https://leetcode-cn.com/problems/longest-common-subsequence/</a></p>
 </blockquote>
-<p><img alt="image-20210405082645234" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405082645234.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405082645234.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210405082645234" data-desc-position="bottom"><img alt="image-20210405082645234" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405082645234.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -7382,7 +7416,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <hr />
-<p><img alt="image-20210405083518341" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405083518341.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405083518341.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210405083518341" data-desc-position="bottom"><img alt="image-20210405083518341" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405083518341.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -7430,7 +7464,7 @@
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="1721">面试题17.21 直方图的水量<a class="headerlink" href="#1721" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210405154710081" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405154710081.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405154710081.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210405154710081" data-desc-position="bottom"><img alt="image-20210405154710081" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405154710081.png" /></a></p>
 <blockquote>
 <p>算法思想：总体积减去柱子的体积就是雨水的体积</p>
 </blockquote>
@@ -7488,7 +7522,7 @@
 <blockquote>
 <p>二分搜索。</p>
 </blockquote>
-<p><img alt="image-20210405190726509" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405190726509.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405190726509.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210405190726509" data-desc-position="bottom"><img alt="image-20210405190726509" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210405190726509.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -7601,7 +7635,7 @@
 <blockquote>
 <p>2021-04-01</p>
 </blockquote>
-<p><img alt="image-20210406185129755" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210406185129755.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210406185129755.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210406185129755" data-desc-position="bottom"><img alt="image-20210406185129755" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210406185129755.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -7676,10 +7710,10 @@
 </code></pre></div></td></tr></table></div>
 <h1 id="acwing">Acwing每日一题<a class="headerlink" href="#acwing" title="Permanent link">&para;</a></h1>
 <h2 id="3725-20211026">3725. 卖罐头 : 数学(2021/10/26)<a class="headerlink" href="#3725-20211026" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211026202634969" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211026202634969.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211026202634969.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211026202634969" data-desc-position="bottom"><img alt="image-20211026202634969" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211026202634969.png" /></a></p>
 <blockquote>
 <p>区间最大长度为<code>l</code>即<code>[l, l*2 - 1]</code></p>
-<p><img alt="image-20211026202929798" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211026202929798.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211026202929798.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211026202929798" data-desc-position="bottom"><img alt="image-20211026202929798" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211026202929798.png" /></a></p>
 </blockquote>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -7718,7 +7752,7 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3705-mex-20211026">3705. 子集mex值 : 数学(2021/10/26)<a class="headerlink" href="#3705-mex-20211026" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211026201147089" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211026201147089.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211026201147089.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211026201147089" data-desc-position="bottom"><img alt="image-20211026201147089" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211026201147089.png" /></a></p>
 <blockquote>
 <p>统计从0到100的数字个数</p>
 </blockquote>
@@ -7805,7 +7839,7 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3732-20211025">3732. 矩阵复原 ：构造思维题(2021/10/25)<a class="headerlink" href="#3732-20211025" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211025203112044" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211025203112044.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211025203112044.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211025203112044" data-desc-position="bottom"><img alt="image-20211025203112044" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211025203112044.png" /></a></p>
 <blockquote>
 <p>根据列首tar值确定他在某行中的列位置 然后填充该列。</p>
 </blockquote>
@@ -7896,7 +7930,7 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3731-20211025">3731. 序列凑零 ： 思维题(2021/10/25)<a class="headerlink" href="#3731-20211025" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211025201028084" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211025201028084.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211025201028084.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211025201028084" data-desc-position="bottom"><img alt="image-20211025201028084" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211025201028084.png" /></a></p>
 <blockquote>
 <p>两两一组 在同一组中和为0</p>
 </blockquote>
@@ -7955,7 +7989,7 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3730-20211025">3730. 寻找序列(2021/10/25)<a class="headerlink" href="#3730-20211025" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20211025195656310" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211025195656310.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211025195656310.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20211025195656310" data-desc-position="bottom"><img alt="image-20211025195656310" src="https://gitee.com/DengSchoo374/img/raw/master/img/image-20211025195656310.png" /></a></p>
 <blockquote>
 <p>构造：对于i保证与i-1不同即可 最后兜底检查n - 1与0是否也满足</p>
 </blockquote>
@@ -8044,7 +8078,7 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3824">3824.在校时间<a class="headerlink" href="#3824" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210907184830385" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210907184830385.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210907184830385.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210907184830385" data-desc-position="bottom"><img alt="image-20210907184830385" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210907184830385.png" /></a></p>
 <blockquote>
 <p>简单模拟</p>
 </blockquote>
@@ -8121,7 +8155,7 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3781">3781.乘车问题<a class="headerlink" href="#3781" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210726193409245" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210726193409245.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210726193409245.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210726193409245" data-desc-position="bottom"><img alt="image-20210726193409245" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210726193409245.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -8181,7 +8215,7 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3729">3729. 改变数组元素<a class="headerlink" href="#3729" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210625194312729" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210625194312729.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210625194312729.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210625194312729" data-desc-position="bottom"><img alt="image-20210625194312729" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210625194312729.png" /></a></p>
 <blockquote>
 <p>区间差分：这个不题目不能直接用，需要维护该区间的次数。</p>
 <p>算法原理：维护数据<code>b[1 - n]</code>, 每次操作即将<code>b[l - r]</code>区间做+k操作：</p>
@@ -8259,7 +8293,7 @@
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="acwing-3720">AcWing 3720. 数组重排<a class="headerlink" href="#acwing-3720" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210623191545445" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210623191545445.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210623191545445.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210623191545445" data-desc-position="bottom"><img alt="image-20210623191545445" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210623191545445.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -8367,7 +8401,7 @@ No
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3686">3686. 移动序列<a class="headerlink" href="#3686" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210616190827568" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210616190827568.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210616190827568.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210616190827568" data-desc-position="bottom"><img alt="image-20210616190827568" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210616190827568.png" /></a></p>
 <blockquote>
 <p>统计最左端1得到<code>index</code>为<code>l</code>和最右端1得到<code>index</code>为<code>r</code>，最后统计<code>[l, r]</code>之间的0即可。</p>
 </blockquote>
@@ -8446,7 +8480,7 @@ No
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3646">3646. 分水果<a class="headerlink" href="#3646" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210608195437512" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210608195437512.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210608195437512.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210608195437512" data-desc-position="bottom"><img alt="image-20210608195437512" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210608195437512.png" /></a></p>
 <blockquote>
 <p>贪心算法：三种可能组合 </p>
 </blockquote>
@@ -8521,7 +8555,7 @@ No
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3629">3629. 同心圆涂色<a class="headerlink" href="#3629" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210605091651268" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210605091651268.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210605091651268.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210605091651268" data-desc-position="bottom"><img alt="image-20210605091651268" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210605091651268.png" /></a></p>
 <blockquote>
 <p>简单题目：不过要注意精度问题</p>
 <p><code>#definePI acos(-1)</code></p>
@@ -8587,7 +8621,7 @@ No
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3624">3624. 三值字符串<a class="headerlink" href="#3624" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210603195257269" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210603195257269.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210603195257269.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210603195257269" data-desc-position="bottom"><img alt="image-20210603195257269" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210603195257269.png" /></a></p>
 <blockquote>
 <p>双指针</p>
 <p>采用三个变量维护状态 左指针移动的情况是当前区间内的个数大于1</p>
@@ -8667,7 +8701,7 @@ No
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3617">3617. 子矩形计数<a class="headerlink" href="#3617" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210602194457714" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210602194457714.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210602194457714.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210602194457714" data-desc-position="bottom"><img alt="image-20210602194457714" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210602194457714.png" /></a></p>
 <blockquote>
 <p>思维题</p>
 <p>将k分成两个数相乘的形式（假设为k = a * b）</p>
@@ -8675,7 +8709,7 @@ No
 在col[]中找出有多少个b个连续的1；</p>
 <p>将两者相乘再累加；</p>
 </blockquote>
-<p><img alt="image-20210602193453372" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210602193453372.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210602193453372.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210602193453372" data-desc-position="bottom"><img alt="image-20210602193453372" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210602193453372.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -8901,7 +8935,7 @@ No
 <blockquote>
 <p>思维题目</p>
 </blockquote>
-<p><img alt="image-20210521202455496" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210521202455496.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210521202455496.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210521202455496" data-desc-position="bottom"><img alt="image-20210521202455496" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210521202455496.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -9028,7 +9062,7 @@ No
 <blockquote>
 <p>简单统计</p>
 </blockquote>
-<p><img alt="image-20210518191828793" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518191828793.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518191828793.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210518191828793" data-desc-position="bottom"><img alt="image-20210518191828793" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518191828793.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -9078,7 +9112,7 @@ No
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3481">3481.阶乘的和<a class="headerlink" href="#3481" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210516200856928" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210516200856928.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210516200856928.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210516200856928" data-desc-position="bottom"><img alt="image-20210516200856928" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210516200856928.png" /></a></p>
 <blockquote>
 <p>启发式剪枝，二进制枚举，爆搜</p>
 </blockquote>
@@ -9278,7 +9312,7 @@ No
 <blockquote>
 <p>迷宫模板题目</p>
 </blockquote>
-<p><img alt="image-20210513193607496" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210513193607496.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210513193607496.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210513193607496" data-desc-position="bottom"><img alt="image-20210513193607496" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210513193607496.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -9477,7 +9511,7 @@ No
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="3485mt">3485.最大异或和(MT笔试)<a class="headerlink" href="#3485mt" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210510220806981" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210510220806981.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210510220806981.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210510220806981" data-desc-position="bottom"><img alt="image-20210510220806981" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210510220806981.png" /></a></p>
 <blockquote>
 <p>分析：</p>
 <p>对于==20%==的数据显然可以使用n^3的算法。枚举起始下标和结束下标。然后再计算该区间的值。</p>
@@ -9757,7 +9791,7 @@ No
 <h1 id="lc-weekcontest">LC WeekContest<a class="headerlink" href="#lc-weekcontest" title="Permanent link">&para;</a></h1>
 <h2 id="239">239场周赛<a class="headerlink" href="#239" title="Permanent link">&para;</a></h2>
 <h4 id="5746"><a href="https://leetcode-cn.com/problems/minimum-distance-to-the-target-element/">5746. 到目标元素的最小距离</a><a class="headerlink" href="#5746" title="Permanent link">&para;</a></h4>
-<p><img alt="image-20210503103928330" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503103928330.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503103928330.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210503103928330" data-desc-position="bottom"><img alt="image-20210503103928330" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503103928330.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -9783,7 +9817,7 @@ No
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h4 id="5747"><a href="https://leetcode-cn.com/problems/splitting-a-string-into-descending-consecutive-values/">5747. 将字符串拆分为递减的连续值</a><a class="headerlink" href="#5747" title="Permanent link">&para;</a></h4>
-<p><img alt="image-20210503104038591" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503104038591.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503104038591.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210503104038591" data-desc-position="bottom"><img alt="image-20210503104038591" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503104038591.png" /></a></p>
 <blockquote>
 <p>二进制枚举</p>
 </blockquote>
@@ -9850,14 +9884,14 @@ No
 <span class="p">};</span>
 </code></pre></div></td></tr></table></div>
 <h4 id="5749"><a href="https://leetcode-cn.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/">5749. 邻位交换的最小次数</a><a class="headerlink" href="#5749" title="Permanent link">&para;</a></h4>
-<p><img alt="image-20210503105657066" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503105657066.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503105657066.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210503105657066" data-desc-position="bottom"><img alt="image-20210503105657066" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503105657066.png" /></a></p>
 <blockquote>
 <p>求当前全排列的下k个排列</p>
 <p><code>next_permutation(b.begin(), b.end())</code></p>
 <p>先找到第k个数，再逆序对交换。等价求解逆数对</p>
 <p>C存A的元素在B中的下标位置和次数，</p>
 </blockquote>
-<p><img alt="image-20210503110017347" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503110017347.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503110017347.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210503110017347" data-desc-position="bottom"><img alt="image-20210503110017347" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210503110017347.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -9927,14 +9961,14 @@ No
 <blockquote>
 <p>签到</p>
 </blockquote>
-<p><img alt="image-20210411142048820" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411142048820.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411142048820.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210411142048820" data-desc-position="bottom"><img alt="image-20210411142048820" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411142048820.png" /></a></p>
 <h3 id="5727">5727找出游戏的获胜者<a class="headerlink" href="#5727" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>约瑟夫环 </p>
 <p>循环链表模拟</p>
 <p>递推</p>
 </blockquote>
-<p><img alt="image-20210411142135411" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411142135411.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411142135411.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210411142135411" data-desc-position="bottom"><img alt="image-20210411142135411" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411142135411.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -10038,7 +10072,7 @@ No
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="_5">最少侧跳数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<p><img alt="image-20210411142221079" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411142221079.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411142221079.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210411142221079" data-desc-position="bottom"><img alt="image-20210411142221079" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411142221079.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -10507,7 +10541,7 @@ No
 <blockquote>
 <p>13 个数字 从大到小 依次减到不能减</p>
 </blockquote>
-<p><img alt="image-20210411171146513" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411171146513.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411171146513.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210411171146513" data-desc-position="bottom"><img alt="image-20210411171146513" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411171146513.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -10572,7 +10606,7 @@ No
 <blockquote>
 <p>维护cnt指针 指向公共下标</p>
 </blockquote>
-<p><img alt="image-20210411183533416" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411183533416.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411183533416.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210411183533416" data-desc-position="bottom"><img alt="image-20210411183533416" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210411183533416.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -10699,7 +10733,7 @@ No
 <blockquote>
 <p>回溯法</p>
 </blockquote>
-<p><img alt="image-20210413192426018" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210413192426018.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210413192426018.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210413192426018" data-desc-position="bottom"><img alt="image-20210413192426018" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210413192426018.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -10905,7 +10939,7 @@ No
 <blockquote>
 <p>递归 每次递归都意味着一次分割</p>
 </blockquote>
-<p><img alt="image-20210414181026316" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210414181026316.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210414181026316.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210414181026316" data-desc-position="bottom"><img alt="image-20210414181026316" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210414181026316.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -10970,7 +11004,7 @@ No
 <blockquote>
 <p>递归方法(类似深搜)</p>
 </blockquote>
-<p><img alt="image-20210414181806624" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210414181806624.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210414181806624.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210414181806624" data-desc-position="bottom"><img alt="image-20210414181806624" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210414181806624.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -11331,7 +11365,7 @@ No
 </code></pre></div></td></tr></table></div>
 <h1 id="_6">常见面试题<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
 <h2 id="_7">自建链表<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p><img alt="image-20210518224004648" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518224004648.png" /></p>
+<p><a class="glightbox" href="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518224004648.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20210518224004648" data-desc-position="bottom"><img alt="image-20210518224004648" src="https://gitee.com/DengSchoo374/img/raw/master/images/image-20210518224004648.png" /></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -11728,7 +11762,30 @@ No
 
 
 
+  
+    
+  
+  
 
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2023</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
 
 
 
@@ -11794,6 +11851,8 @@ No
     
       <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
+        <script src="../../../javascripts/glightbox.min.js"></script>
+      
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script><script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
