@@ -114,7 +114,9 @@ nav:
       - Algorithm/lc-weekly/lc-376th.md
       - Algorithm/lc-weekly/lc-377th.md
     - Notes:
-      - Algorithm/notes/part-one/01-introduction.md
+      - PartI Basic Tech:
+        - Algorithm/notes/part-one/01-introduction.md
+        - Algorithm/notes/part-one/02-time-complexity.md
   - English:
     - Articles Read:
       - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md
@@ -168,7 +170,8 @@ plugins:
       caption_position: bottom
   - git-revision-date-localized
   - search
-  - glightbox
+  # - optimize
+
   # - markdown-captions
   # - git-authors
   

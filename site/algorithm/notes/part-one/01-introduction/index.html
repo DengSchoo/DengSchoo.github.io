@@ -99,14 +99,48 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css">
     
+      <link rel="stylesheet" href="../../../../stylesheets/glightbox.min.css">
+    
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-WM3NPNX97Z"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-WM3NPNX97Z",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-WM3NPNX97Z",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
     
-  </head>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../../assets/javascripts/glightbox.min.js"></script> <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -182,10 +216,10 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
       </label>
     
   
@@ -1052,7 +1086,7 @@
             
   
   <span class="md-ellipsis">
-    article-trans
+    Articles Read
   </span>
   
 
@@ -1062,7 +1096,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
-            article-trans
+            Articles Read
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1173,7 +1207,7 @@
             
   
   <span class="md-ellipsis">
-    Moment With GF
+    Moments With GF
   </span>
   
 
@@ -1183,7 +1217,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
-            Moment With GF
+            Moments With GF
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1705,7 +1739,7 @@
 <h3 id="modular-arithmetic">Modular Arithmetic｜模运算<a class="headerlink" href="#modular-arithmetic" title="Permanent link">&para;</a></h3>
 <p>在某些答案特别大的情况下，为了照顾各语言的差异，所以都会对结果进行取模操作，常用的mod数为<code>1e9 + 7</code>，这样可以照顾到int和long数据类型。</p>
 <p>模运算等式：</p>
-<p><img alt="image-20231224222140117" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242221288.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242221288.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231224222140117" data-desc-position="bottom"><img alt="image-20231224222140117" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242221288.png" /></a></p>
 <p>负数的模运算为0或者负数。</p>
 <h3 id="floating-point-numbers">Floating Point Numbers｜浮点数<a class="headerlink" href="#floating-point-numbers" title="Permanent link">&para;</a></h3>
 <p>常用的是64bit的double类型，同时g++支持80bit的long double，大多数场景下64就够了，80的更为准确。</p>
@@ -1790,18 +1824,18 @@
 <h2 id="mathematics">Mathematics｜算数运算<a class="headerlink" href="#mathematics" title="Permanent link">&para;</a></h2>
 <h3 id="sum-formulas">Sum Formulas｜求和公式<a class="headerlink" href="#sum-formulas" title="Permanent link">&para;</a></h3>
 <p>给出一些常用求和公式：</p>
-<p><img alt="image-20231224223515706" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242235744.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242235744.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231224223515706" data-desc-position="bottom"><img alt="image-20231224223515706" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242235744.png" /></a></p>
 <p><strong>arithmetic progression｜等差数列</strong></p>
 <p>如果各数之间差值相同，存在一个计算公式：</p>
 <p>exp：<code>3, 7, 11, 15</code></p>
-<p>公式为：<img alt="image-20231224223640210" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242236253.png" /></p>
+<p>公式为：<a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242236253.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231224223640210" data-desc-position="bottom"><img alt="image-20231224223640210" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242236253.png" /></a></p>
 <p><strong>geometric progression｜等比数列</strong></p>
 <blockquote>
 <p>A geometric progression is a sequence of numbers where the ratio between any two consecutive numbers is constant. For example,3,6,12,24</p>
 </blockquote>
-<p><img alt="image-20231224223858981" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242238022.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242238022.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231224223858981" data-desc-position="bottom"><img alt="image-20231224223858981" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242238022.png" /></a></p>
 <p><strong>harmonic sum｜谐波和</strong></p>
-<p><img alt="image-20231224223951624" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242239756.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242239756.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231224223951624" data-desc-position="bottom"><img alt="image-20231224223951624" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242239756.png" /></a></p>
 <h3 id="set-theory">Set Theory｜集合论<a class="headerlink" href="#set-theory" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>A set is a collection of elements. For example, the set, X = {2, 4, 7}</p>
@@ -1854,15 +1888,15 @@
 </li>
 <li>
 <p>The factorial n! can be defined</p>
-<p><img alt="image-20231224225721572" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257658.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257658.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231224225721572" data-desc-position="bottom"><img alt="image-20231224225721572" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257658.png" /></a></p>
 </li>
 <li>
 <p>Fibonacci numbers｜斐波那契数列:</p>
-<p><img alt="image-20231224225750219" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257254.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257254.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231224225750219" data-desc-position="bottom"><img alt="image-20231224225750219" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242257254.png" /></a></p>
 <ul>
 <li>
 <p>Binet’s formula｜比奈公式:</p>
-<p><img alt="image-20231224225821628" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242258710.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242258710.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231224225821628" data-desc-position="bottom"><img alt="image-20231224225821628" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242258710.png" /></a></p>
 </li>
 </ul>
 </li>
@@ -1871,7 +1905,7 @@
 <blockquote>
 <p>The logarithm of a number x is denoted logk(x), where k is the base of the logarithm. According to the definition, logk(x) = a exactly when k<sup>a</sup> = x.</p>
 </blockquote>
-<p><img alt="image-20231224230057079" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242300116.png" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242300116.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231224230057079" data-desc-position="bottom"><img alt="image-20231224230057079" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312242300116.png" /></a></p>
 <p>The natural logarithm ln(x) of a number x is a logarithm whose base is e ≈ 2.71828. Another property of logarithms is that the number of digits of an integer x in base b is ⌊logb(x)+1⌋. For example, the representation of 123 in base 2 is 1111011 and ⌊log2(123) + 1⌋ = 7.</p>
 <h2 id="contests-and-resources">Contests and resources｜比赛和资源<a class="headerlink" href="#contests-and-resources" title="Permanent link">&para;</a></h2>
 <h3 id="ioi">IOI｜国际奥林匹克信息竞赛<a class="headerlink" href="#ioi" title="Permanent link">&para;</a></h3>
@@ -1916,7 +1950,30 @@
 
 
 
+  
+    
+  
+  
 
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2023</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
 
 
 
@@ -1982,6 +2039,8 @@
     
       <script src="../../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
+        <script src="../../../../javascripts/glightbox.min.js"></script>
+      
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script><script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

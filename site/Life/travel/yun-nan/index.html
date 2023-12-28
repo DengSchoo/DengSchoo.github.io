@@ -99,14 +99,48 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.css">
     
+      <link rel="stylesheet" href="../../../stylesheets/glightbox.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-WM3NPNX97Z"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-WM3NPNX97Z",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-WM3NPNX97Z",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script> <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -182,10 +216,10 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
       </label>
     
   
@@ -798,7 +832,7 @@
             
   
   <span class="md-ellipsis">
-    article-trans
+    Articles Read
   </span>
   
 
@@ -808,7 +842,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
-            article-trans
+            Articles Read
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -923,7 +957,7 @@
             
   
   <span class="md-ellipsis">
-    Moment With GF
+    Moments With GF
   </span>
   
 
@@ -933,7 +967,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
-            Moment With GF
+            Moments With GF
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1261,29 +1295,34 @@
 <p>适合养老、看红嘴海鸥</p>
 </blockquote>
 <p>刚到公园就看到一群老法师在斗法：</p>
-<p><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172246014.JPG" alt="DSC02882" style="zoom:10%;" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172246014.JPG" data-type="image" data-width="100%" data-height="auto" data-title="DSC02882" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172246014.JPG" alt="DSC02882" style="zoom:10%;" /></a></p>
 <p>“春城”的天气加持下的翠湖公园：</p>
-<p><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172244661.JPG" alt="DSC02928" style="zoom:10%;" /></p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172244661.JPG" data-type="image" data-width="100%" data-height="auto" data-title="DSC02928" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172244661.JPG" alt="DSC02928" style="zoom:10%;" /></a></p>
 <h2 id="2">2.滇池及海洪湿地公园<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>看、喂海鸥、看昆明冬日景色、枫红林、落日</p>
 </blockquote>
 <p>美如画的枫叶林：不缩放，给个大图。这张无敌了，我直出的，色彩无敌。</p>
-<p><img alt="DSC02938" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172239218.JPG" /></p>
+<figure>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172239218.JPG" data-type="image" data-width="100%" data-height="auto" data-title="DSC02938" data-desc-position="bottom"><img alt="DSC02938" src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172239218.JPG" /></a></p>
+<figcaption>
+<p>美丽的枫叶林</p>
+</figcaption>
+</figure>
 <p>滇池边享受游客投喂的海鸥：</p>
 <p><center>
-    <img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172231701.JPG" alt="DSC02950" style="zoom: 10%;"/>
+    <a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172231701.JPG" data-type="image" data-width="100%" data-height="auto" data-title="DSC02950" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172231701.JPG" alt="DSC02950" style="zoom: 10%;"/></a>
 </center></p>
 <p><center>
-    <img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172235716.JPG" alt="DSC02946" style="zoom:10%;" title="图片title"/>
+    <a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172235716.JPG" data-type="image" data-width="100%" data-height="auto" data-title="DSC02946" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172235716.JPG" alt="DSC02946" style="zoom:10%;" title="图片title"/></a>
 </center></p>
 <h2 id="3">3.按摩及精油过敏<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <p>之前按摩从来没有用过精油，这次用了30块的精油，回成都之后全身红痒，凌晨五点挂号去看医生，还休了一天假期，得了全身过敏性引起的寻麻疹，万幸消的很快一天都没事了。以后吸取教训，怎么也不用精油按摩了，血液里面是俗血用不得太高贵的。这个章节就无图片了。</p>
 <h2 id="4">4.感悟总结<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
 <p>最近说实话压力很大，身在互联网行业，应该珍惜自己身体健康的时候，多陪陪家人、爱人，多放松一下心情别绷太紧了，花点时间去看没看过的风景、去吃点没吃过的美食、去感受没感受的文化。下次一定多拍点吃的好吃的。</p>
 <p><center class="half">
-    <img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172257274.JPG" alt="DSC02878" style="zoom:5%;" />
-    <img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172300383.JPG" alt="DSC02907" style="zoom:5%;" />
+    <a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172257274.JPG" data-type="image" data-width="100%" data-height="auto" data-title="DSC02878" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172257274.JPG" alt="DSC02878" style="zoom:5%;" /></a>
+    <a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172300383.JPG" data-type="image" data-width="100%" data-height="auto" data-title="DSC02907" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312172300383.JPG" alt="DSC02907" style="zoom:5%;" /></a>
 </center></p>
 <p>​    </p>
 
@@ -1293,7 +1332,30 @@
 
 
 
+  
+    
+  
+  
 
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2023</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
 
 
 
@@ -1359,6 +1421,8 @@
     
       <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
+        <script src="../../../javascripts/glightbox.min.js"></script>
+      
     
-  </body>
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script><script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
