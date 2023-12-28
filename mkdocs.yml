@@ -1,6 +1,6 @@
 site_name: Deng's Life Logger.
 site_url: https://dengschoo.github.io/Logger #这个是home page的位置，比如https://charleschile.github.io/Notebook，serve的话就会运行在http://127.0.0.1:8000/Notebook/
-site_author: 邓世豪
+site_author: Deng Schoo
 site_description: 邓世豪的个人笔记
 
 
@@ -189,6 +189,7 @@ plugins:
   - git-committers:
       repository: DengSchoo/DengSchoo.github.io
       branch: main
+      token: !ENV ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   
 
 
