@@ -155,6 +155,19 @@ nav:
 #       page_check_metadata: comments
 
 plugins:
+  - git-authors:
+      exclude:
+        - docs/README.md
+        - index.md
+      show_contribution: true
+      show_line_count: true
+      show_email_address: true
+      count_empty_lines: true
+      fallback_to_empty: false
+      sort_authors_by: name
+      authorship_threshold_percent: 10
+      enabled: true
+      strict: true
   - glightbox:
       touchNavigation: true
       loop: false
@@ -168,12 +181,14 @@ plugins:
         - custom-skip-class-name
       auto_caption: true
       caption_position: bottom
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      type: date
+      # fallback_to_build_date: false
+      enable_creation_date: true
   - search
-  # - optimize
-
-  # - markdown-captions
-  # - git-authors
+  - git-committers:
+      repository: DengSchoo/DengSchoo.github.io
+      branch: main
   
 
 
