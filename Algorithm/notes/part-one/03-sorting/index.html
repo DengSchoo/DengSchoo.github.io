@@ -18,11 +18,11 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
-        <title>03 sorting - Deng's Life Logger.</title>
+        <title>Sorting｜排序 - Deng's Life Logger.</title>
       
     
     
@@ -113,6 +113,32 @@
 
     
     
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Sorting｜排序 - Deng's Life Logger." >
+      
+        <meta  property="og:description"  content="邓世豪的个人笔记" >
+      
+        <meta  property="og:image"  content="https://dengschoo.github.io/Logger/assets/images/social/Algorithm/notes/part-one/03-sorting.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dengschoo.github.io/Logger/Algorithm/notes/part-one/03-sorting/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Sorting｜排序 - Deng's Life Logger." >
+      
+        <meta  name="twitter:description"  content="邓世豪的个人笔记" >
+      
+        <meta  name="twitter:image"  content="https://dengschoo.github.io/Logger/assets/images/social/Algorithm/notes/part-one/03-sorting.png" >
+      
+    
     
    <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
@@ -178,7 +204,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              03 sorting
+              Sorting｜排序
             
           </span>
         </div>
@@ -1196,6 +1222,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1204,11 +1232,287 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sorting" class="md-nav__link">
+  <a href="#sorting-theory" class="md-nav__link">
     <span class="md-ellipsis">
-      Sorting｜排序
+      Sorting Theory
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Sorting Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#n2-algo" class="md-nav__link">
+    <span class="md-ellipsis">
+      n2 algo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inversions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inversions｜逆序对
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nlongn-algo" class="md-nav__link">
+    <span class="md-ellipsis">
+      nlong(n) algo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting-lower-bound" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting Lower Bound｜排序的更低边界
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#counting-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting Sort
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sorting-in-cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sorting In C++｜C++中的排序
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sorting In C++｜C++中的排序">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison Operator｜对比操作符
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-defined-structs" class="md-nav__link">
+    <span class="md-ellipsis">
+      User-defined Structs｜用户自定义结构排序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparison Functions｜对比方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search｜二分查找
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Binary Search｜二分查找">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1｜实现方法1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2｜实现方法2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-functionsc" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ Functions｜C++库函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见排序算法实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常见排序算法实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      插入排序
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="插入排序">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      直接插入排序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      折半插入排序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      交换排序
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="交换排序">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      冒泡排序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      快速排序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      选择排序
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="选择排序">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      简单选择排序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      堆排序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      归并排序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      基数排序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结和比较
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1227,9 +1531,229 @@
                   
 
 
-  <h1>03 sorting</h1>
+<h1 id="sorting">Sorting｜排序<a class="headerlink" href="#sorting" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Sorting is a fundamental algorithm design problem. Many efficient algorithms use sorting as a subroutine, because it is often easier to process data if the elements are in a sorted order.</p>
+</blockquote>
+<h2 id="sorting-theory">Sorting Theory<a class="headerlink" href="#sorting-theory" title="Permanent link">&para;</a></h2>
+<h3 id="n2-algo">n<sup>2</sup> algo<a class="headerlink" href="#n2-algo" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>这类排序算法大多数都很简短，比较暴力，通常包含两层循环。比较有名的算法是冒泡排序。</p>
+</blockquote>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302037684.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231230203705583" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302037684.png" alt="image-20231230203705583" style="zoom:33%;" /></a></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="mi">-1</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">swap</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">array</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="inversions">Inversions｜逆序对<a class="headerlink" href="#inversions" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Inversion: a pair of array elements (array[a], array[b]) such that a &lt; b and array[a] &gt; array[b], i.e.,</p>
+</blockquote>
+<p>逆序对这个概念常用于分析排序算法，有多少逆序数代表着排序这个数组的工作量。</p>
+<p>当不存在逆序对的时候说明这个数组已经排好序了。同时如果一个数组是完全逆序的，那么就会有<a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302043764.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231230204329709" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302043764.png" alt="image-20231230204329709" style="zoom:25%;" /></a></p>
+<p>冒牌排序就是交换两个相邻的逆序对，但是这个算法是n<sup>2</sup>的因为每次都要比较相邻的两个元素。</p>
+<h3 id="nlongn-algo">nlong(n) algo<a class="headerlink" href="#nlongn-algo" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>有些算法不需要交换相邻的元素，比如归并排序。</p>
+</blockquote>
+<p>归并排序一个子数组arrayp[a...b]的过程：</p>
+<ol>
+<li>如果a==b说明为单个元素的子数组则不需要排序</li>
+<li>计算a和b的中间值</li>
+<li>递归排序array[a...k]</li>
+<li>递归排序array[k + 1 .... b]</li>
+<li>合并两个排序后的数组(array[a...k]和array[k + 1 .... b]到array[a....b])</li>
+</ol>
+<p>这个算法递归层数：log(n)，合并两个排序数组:O(n)，所以总的时间复杂度为O(n*log(n))</p>
+<h3 id="sorting-lower-bound">Sorting Lower Bound｜排序的更低边界<a class="headerlink" href="#sorting-lower-bound" title="Permanent link">&para;</a></h3>
+<p>是否可以让时间复杂度降到比O(nlog(n))更低？如果继续使用对比元素的方法的话是无法实现更低的复杂度的。</p>
+<p>对比排序的过程可以处理为一颗树：</p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302053731.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231230205337684" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302053731.png" alt="image-20231230205337684" style="zoom: 33%;" /></a></p>
+<p>所有的对比处理过程都可以通过上面树来表示，假设答案在其中的一条路径上，总体有<code>n!</code>方法，所以这颗树的高度最小为log2(n!)=log2(1)+log2(2)+...+log2(n)。</p>
+<p>用最少n/2元素以及整体元素值为log2(n/2)可以推算出：</p>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302058623.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231230205823562" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302058623.png" alt="image-20231230205823562" style="zoom: 50%;" /></a></p>
+<p>所以最优解可能的操作步骤最小值为(n/2)log2(n/2)即:(n)log2(n)</p>
+<h3 id="counting-sort">Counting Sort<a class="headerlink" href="#counting-sort" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>有些排序不需要对比元素：比如计数排序，在O(n)时间复杂度内排序，并假设元素都在0~n内，n为最大值，0为最小值。</p>
+<p>算法思想：使用数组值对于下标来排序，比如当前值为3，那么这个数值就应该处于下标为3的计数数组中，最后顺序遍历这个数组得到排序后的结果。</p>
+</blockquote>
+<p><a class="glightbox" href="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302104107.png" data-type="image" data-width="100%" data-height="auto" data-title="image-20231230210436063" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/DengSchoo/GayHubImgBed/main/imgs/202312302104107.png" alt="image-20231230210436063" style="zoom:33%;" /></a></p>
+<p>整体时间复杂度为O(n)，并且条件也比较苛刻，c要求足够小才能用数组来做bookkeeping</p>
+<h2 id="sorting-in-cc">Sorting In C++｜C++中的排序<a class="headerlink" href="#sorting-in-cc" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>sort函数包含多种算法的实现，不只是快速排序，自己内部会选择最优算法，所以一般直接用库函数即可。</p>
+</blockquote>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+<span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">());</span><span class="w"> </span><span class="c1">// 升序</span>
 
-<h2 id="sorting">Sorting｜排序<a class="headerlink" href="#sorting" title="Permanent link">&para;</a></h2>
+
+<span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">rbegin</span><span class="p">(),</span><span class="n">v</span><span class="p">.</span><span class="n">rend</span><span class="p">());</span><span class="w"> </span><span class="c1">// 降序</span>
+
+
+<span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w"> </span><span class="c1">// array size</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span>
+<span class="n">sort</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="n">n</span><span class="p">);</span>
+
+<span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;monkey&quot;</span><span class="p">;</span>
+<span class="n">sort</span><span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">());</span><span class="w"> </span><span class="c1">//  s = ekmnoy</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="comparison-operator">Comparison Operator｜对比操作符<a class="headerlink" href="#comparison-operator" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>The function sort requires that a comparison operator is defined for the data type of the elements to be sorted.</p>
+<p>Most C++ data types have a built-in comparison operator, and elements of those types can be sorted automatically.</p>
+</blockquote>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">;</span><span class="w"> </span><span class="c1">// 先排序first 然后second</span>
+<span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">});</span>
+<span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">});</span>
+<span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">});</span>
+<span class="w">    </span><span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+
+<span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">;</span><span class="w"> </span><span class="c1">// 先排序first、second、third...</span>
+<span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">});</span>
+<span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">});</span>
+<span class="w">    </span><span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">});</span>
+<span class="w">    </span><span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="user-defined-structs">User-defined Structs｜用户自定义结构排序<a class="headerlink" href="#user-defined-structs" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>用户自己实现的没有重载&lt;运算符，所以得自己实现。</p>
+</blockquote>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">P</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="k">operator</span><span class="o">&lt;</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">P</span><span class="w"> </span><span class="o">&amp;</span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+<span class="p">}</span><span class="w"> </span><span class="p">};</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="comparison-functions">Comparison Functions｜对比方法<a class="headerlink" href="#comparison-functions" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>使用自定义的一个对比方法传入到sort函数中来排序</p>
+</blockquote>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="nf">comp</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="n">comp</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="binary-search">Binary Search｜二分查找<a class="headerlink" href="#binary-search" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>通常查找一个元素的时间复杂度为O(n)，使用二分查找可以将复杂度降到O(logn)，原理就是借助自身的一些信息来实现，在这里就是自身数组的有序性，不断的以二分的方式逼近正确答案。</p>
+</blockquote>
+<h3 id="method-11">Method 1｜实现方法1<a class="headerlink" href="#method-11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="mi">-1</span><span class="p">;</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// x found at index k</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="mi">-1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="method-22">Method 2｜实现方法2<a class="headerlink" href="#method-22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">array</span><span class="p">[</span><span class="n">k</span><span class="o">+</span><span class="n">b</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// x found at index k</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="c-functionsc">C++ Functions｜C++库函数<a class="headerlink" href="#c-functionsc" title="Permanent link">&para;</a></h2>
+<ul>
+<li>lower_bound：返回第一个不小于x的元素</li>
+<li>upper_bound：返回第一个大于x的元素</li>
+<li>equal_ranger：返回上面两个函数的返回值指针</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lower_bound</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="n">array</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="n">array</span><span class="p">;</span><span class="w"> </span><span class="c1">// k为对应下标，如果元素不存在这个值为n即数组下标的不可能元素</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">k</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">array</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// x found at index k</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lower_bound</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">array</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// 第一个不小于x的元素</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">upper_bound</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">array</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// 第一个大于x的元素</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">equal_range</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">array</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
+<span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">r</span><span class="p">.</span><span class="n">second</span><span class="o">-</span><span class="n">r</span><span class="p">.</span><span class="n">first</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_1">常见排序算法实现<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">插入排序<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h4 id="_3">直接插入排序<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<h4 id="_4">折半插入排序<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<h3 id="_5">交换排序<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h4 id="_6">冒泡排序<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<h4 id="_7">快速排序<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<h3 id="_8">选择排序<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h4 id="_9">简单选择排序<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<h4 id="_10">堆排序<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<h3 id="_11">归并排序<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h3 id="_12">基数排序<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h3 id="_13">总结和比较<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 
 
 
@@ -1252,7 +1776,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 28, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 31, 2023</span>
   </span>
 
     
@@ -1262,12 +1786,13 @@
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 28, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 31, 2023</span>
   </span>
 
     
     
       
+  
   <span class="md-source-file__fact">
     <span class="md-icon" title="贡献者">
       
