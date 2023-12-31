@@ -155,6 +155,11 @@ nav:
 #       page_check_metadata: comments
 
 plugins:
+  - social:
+      cards_color:
+        fill: "#0FF1CE" 
+        text: "#FFFFFF"
+      cards_font: Noto Sans SC
   - git-authors:
       exclude:
         - docs/README.md
