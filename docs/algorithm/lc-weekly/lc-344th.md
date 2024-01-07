@@ -1,4 +1,4 @@
-# [第 344 场周赛](https://leetcode.cn/contest/weekly-contest-344/)
+# [LC.344th](https://leetcode.cn/contest/weekly-contest-344/)
 
 ## [6416. 找出不同元素数目差数组](https://leetcode.cn/problems/find-the-distinct-difference-array/)
 

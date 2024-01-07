@@ -1,4 +1,4 @@
-# LC377th周赛
+# LC377th
 
 ## [100148. 最小数字游戏](https://leetcode.cn/problems/minimum-number-game/)
 

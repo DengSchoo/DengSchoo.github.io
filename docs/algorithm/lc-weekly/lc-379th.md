@@ -1,4 +1,4 @@
-# LC377th周赛
+# LC377th
 
 ## [100170. 对角线最长的矩形的面积](https://leetcode.cn/problems/maximum-area-of-longest-diagonal-rectangle/)
 

@@ -1,4 +1,4 @@
-# LC.376th周赛
+# LC.376th
 
 ## [100149. 找出缺失和重复的数字](https://leetcode.cn/problems/find-missing-and-repeated-values/)
 
