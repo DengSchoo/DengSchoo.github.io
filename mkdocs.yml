@@ -111,8 +111,10 @@ nav:
   - Algorithm:
     - Algorithm/index.md
     - LC Weekly Contest:
+      - Algorithm/lc-weekly/lc-344th.md
       - Algorithm/lc-weekly/lc-376th.md
       - Algorithm/lc-weekly/lc-377th.md
+      - Algorithm/lc-weekly/lc-379th.md
     - Notes:
       - PartI Basic Tech:
         - Algorithm/notes/part-one/01-introduction.md
@@ -157,7 +159,7 @@ nav:
 plugins:
   - social:
       cards_color:
-        fill: "#0FF1CE" 
+        fill: "#5e95e6" 
         text: "#FFFFFF"
       cards_font: Noto Sans SC
   - git-authors:
