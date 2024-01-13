@@ -119,6 +119,8 @@ nav:
       - PartI Basic Tech:
         - Algorithm/notes/part-one/01-introduction.md
         - Algorithm/notes/part-one/02-time-complexity.md
+      - 算法模板:
+        - Algorithm/notes/template.md
   - English:
     - Articles Read:
       - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md

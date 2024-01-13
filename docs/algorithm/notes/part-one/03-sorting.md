@@ -218,46 +218,205 @@ cout << r.second-r.first << "\n";
 
 ## 常见排序算法实现
 
+> 每种排序算法都有其适用的场景。例如，对于小数据集，插入排序可能比快速排序更有效；而对于大数据集，快速排序或归并排序通常更优。理解每种排序算法的工作原理和性能特点对于选择合适的排序策略至关重要。
+
+### 冒泡排序
+
+**冒泡排序（Bubble Sort）**:
+
+- **原理**: 重复遍历要排序的序列，比较相邻的元素，如果它们的顺序错误就交换它们。
+- **特点**: 简单易懂，但效率不高，尤其是对于大数据集。最佳情况时间复杂度为 (O(n))，平均和最差情况时间复杂度为 (O(n^2))。
+
+```c++
+// Bubble Sort
+void bubbleSort(vector<int>& arr) {
+   int n = arr.size();
+   for (int i = 0; i < n-1; i++)    
+       for (int j = 0; j < n-i-1; j++)
+           if (arr[j] > arr[j+1])
+               swap(arr[j], arr[j+1]);
+}
+```
+
+
+
 ### 插入排序
 
-#### 直接插入排序
+**插入排序（Insertion Sort）**:
 
+- **原理**: 逐个将元素插入到已排序的序列中的正确位置。
 
+- **特点**: 对于小数据集或基本有序的数据效率较高。时间复杂度同冒泡排序。
 
-#### 折半插入排序
-
-
-
-
-
-### 交换排序
-
-#### 冒泡排序
-
-
-
-#### 快速排序
+```c++
+void insertionSort(vector<int>& arr) {
+   int n = arr.size();
+   for (int i = 1; i < n; i++) {
+       int key = arr[i];
+       int j = i - 1;
+       // 选择当前key适合的位置，向左遍历找到第一个元素不大于key的即key所属当前位置
+       while (j >= 0 && arr[j] > key) {
+           arr[j + 1] = arr[j];
+           j = j - 1;
+      }
+       arr[j + 1] = key;
+  }
+}
+```
 
 
 
 ### 选择排序
 
+**选择排序（Selection Sort）**:
 
+- **原理**: 每次从未排序的部分选择最小（或最大）的元素，放到已排序序列的末尾。
 
-#### 简单选择排序
+- **特点**: 不依赖于初始数据，时间复杂度始终为 (O(n^2))。
 
-
-
-#### 堆排序
+```c++
+// Selection Sort
+void selectionSort(vector<int>& arr) {
+   int n = arr.size();
+   for (int i = 0; i < n-1; i++) {
+       // 选择最小的放到i位置
+       int min_idx = i;
+       for (int j = i+1; j < n; j++)
+           if (arr[j] < arr[min_idx])
+               min_idx = j;
+       swap(arr[min_idx], arr[i]);
+  }
+}
+```
 
 
 
 ### 归并排序
 
+**归并排序（Merge Sort）**:
+
+- **原理**: 采用分治法，将原始数组分成较小的数组，直到每个小数组只有一个元素，然后将小数组归并成较大的数组。
+
+- **特点**: 非常有效，适用于大数据集。时间复杂度为 (O(n \log n))。但它需要与原数组一样多的额外存储空间。
+
+```c++
+// Merge Sort Helper Functions
+void merge(vector<int>& arr, int l, int m, int r) {
+   int n1 = m - l + 1;
+   int n2 = r - m;
+
+   vector<int> L(n1), R(n2);
+
+    for (int i = 0; i < n1; i++)
+       L[i] = arr[l + i];
+    for (int j = 0; j < n2; j++)
+       R[j] = arr[m + 1 + j];
+
+    int i = 0, j = 0, k = l;
+    while (i < n1 && j < n2) {
+       if (L[i] <= R[j]) {
+           arr[k] = L[i];
+           i++;
+      } else {
+           arr[k] = R[j];
+           j++;
+      }
+       k++;
+    }
+
+   while (i < n1) {
+       arr[k] = L[i];
+       i++;
+       k++;
+    }
+    while (j < n2) {
+       arr[k] = R[j];
+       j++;
+       k++;
+    }
+}
+void mergeSort(vector<int>& arr, int l, int r) {
+   if (l >= r)
+       return;  
+   int m = l + (r - l) / 2;
+   mergeSort(arr, l, m);
+   mergeSort(arr, m + 1, r);
+   merge(arr, l, m, r);
+}
+```
 
 
-### 基数排序
+
+### 快速排序
+
+**快速排序（Quick Sort）**:
+
+- **原理**: 也是分治法。选择一个“基准”，然后将数组分为两部分，一部分比基准小，另一部分比基准大，最后递归地对这两部分进行快速排序。
+
+- **特点**: 平均情况下非常快，平均时间复杂度为 (O(n \log n))，但最坏情况下为 (O(n^2))。
+
+```c++
+// Quick Sort Helper Functions
+int partition(vector<int>& arr, int low, int high) {
+   int pivot = arr[high];
+   int i = (low - 1);
+   for (int j = low; j <= high - 1; j++) {
+       if (arr[j] < pivot) {
+           i++;
+           swap(arr[i], arr[j]);
+      }
+  }
+   swap(arr[i + 1], arr[high]);
+   return (i + 1);
+}
+void quickSort(vector<int>& arr, int low, int high) {
+   if (low < high) {
+       int pi = partition(arr, low, high);
+       quickSort(arr, low, pi - 1);
+       quickSort(arr, pi + 1, high);
+  }
+}
+```
 
 
 
-### 总结和比较
+### 堆排序
+
+**堆排序（Heap Sort）**:
+
+- **原理**: 利用堆这种数据结构，首先构建一个最大堆，然后将根节点（最大值）与最后一个节点交换并减小堆的大小，重复此过程直到堆的大小为 1。
+
+- **特点**: 时间复杂度为 (O(n \log n))，无需额外的存储空间。
+
+```c++
+void heapify(vector<int>& arr, int n, int i) {
+    //构建以i为初始节点的堆
+    //n表示待排序元素个数
+    
+   int largest = i;
+   int left = 2*i + 1;
+   int right = 2*i + 2;
+
+   if (left < n && arr[left] > arr[largest])
+       largest = left;
+   if (right < n && arr[right] > arr[largest])
+       largest = right;
+
+   if (largest != i) {
+       // 如果当前i不是最大值那么递归构建最大值
+       swap(arr[i], arr[largest]);
+       heapify(arr, n, largest);
+  }
+}
+void heapSort(vector<int>& arr) {
+   int n = arr.size();
+   for (int i = n / 2 - 1; i >= 0; i--)
+       heapify(arr, n, i);
+   for (int i = n - 1; i > 0; i--) {
+       // 堆顶元素为下标为0的元素
+       swap(arr[0], arr[i]);
+       heapify(arr, i, 0);
+  }
+}
+```
+
