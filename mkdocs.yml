@@ -166,7 +166,6 @@ nav:
 
 plugins:
   - tags
-  - meta
   - social:
       cards_color:
         fill: "#5e95e6" 
