@@ -1,13 +1,12 @@
-- 算法学习
-  - 每日一题
-    - lc-cn
-    - lc-en
-  - 算法资料
-- 英语
-  - 阅读
-  - 口语：[Udemy高分 美国英语口语发音课程 （中英字幕）_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Nz4y1F7J3/?spm_id_from=333.337.search-card.all.click&vd_source=0f47d40de7d42a2d663d29d6e07c00fd)
-  - 单词
-  - 语法
-- 技术
-  - 今日热榜
-  - 
+# 年度计划
+
+## 阅读数据
+
+| 名称                       | 内容相关 | 质量 | 节奏     |
+| -------------------------- | -------- | ---- | -------- |
+| 28天学会英语语法           | 英语学习 | 5    | 每周两天 |
+| Pro GO                     | golang   | 5    |          |
+| Redis Essentials           | Redis    | 5    |          |
+| Excellent Adive For Living | 人生建议 | 5    |          |
+|                            |          |      |          |
+

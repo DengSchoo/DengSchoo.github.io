@@ -121,6 +121,10 @@ nav:
         - Algorithm/notes/part-one/02-time-complexity.md
       - 算法模板:
         - Algorithm/notes/template.md
+    - Company Regular Problems:
+      - pdd:
+        - Algorithm/company-regular-problems/pdd-1.md
+        - Algorithm/company-regular-problems/pdd-2.md
   - English:
     - Articles Read:
       - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md
@@ -161,6 +165,8 @@ nav:
 #       page_check_metadata: comments
 
 plugins:
+  - tags
+  - meta
   - social:
       cards_color:
         fill: "#5e95e6" 

@@ -1,5 +1,13 @@
 # 算法学习
 
+## 推荐题单
+
+- [Krahets 笔面试精选 88 题 - 学习计划 - 力扣（LeetCode）全球极客挚爱的技术成长平台](https://leetcode.cn/studyplan/selected-coding-interview/)
+- [图解算法数据结构 - LeetBook - 力扣（LeetCode）全球极客挚爱的技术成长平台](https://leetcode.cn/leetbook/detail/illustration-of-algorithm/)
+- [LeetCode 热题 100 - 学习计划 - 力扣（LeetCode）全球极客挚爱的技术成长平台](https://leetcode.cn/studyplan/top-100-liked/)
+- [面试经典 150 题 - 学习计划 - 力扣（LeetCode）全球极客挚爱的技术成长平台](https://leetcode.cn/studyplan/top-interview-150/)
+- [LeetCode 75 - 学习计划 - 力扣（LeetCode）全球极客挚爱的技术成长平台](https://leetcode.cn/studyplan/leetcode-75/)
+- 
 
 
 ## 本章学习内容
