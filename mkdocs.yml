@@ -123,8 +123,10 @@ nav:
         - Algorithm/notes/template.md
     - Company Regular Problems:
       - pdd:
-        - Algorithm/company-regular-problems/pdd-1.md
-        - Algorithm/company-regular-problems/pdd-2.md
+        - Algorithm/company-regular-problems/pdd/pdd-1.md
+        - Algorithm/company-regular-problems/pdd/pdd-2.md
+      - bytedance:
+        - Algorithm/company-regular-problems/bytedance/top-100.md
   - English:
     - Articles Read:
       - English/article-trans/1.Dyson-spheres-and-the-quest-to-detect-alien-technosignatures.md
